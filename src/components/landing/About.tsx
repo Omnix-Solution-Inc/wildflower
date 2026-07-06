@@ -28,20 +28,20 @@ export function About() {
           </p>
 
           <p className="text-[0.84rem] tracking-[0.04em] leading-[1.9] text-charcoal max-w-[560px] mb-5">
-            As a woman and mother of four, I founded this business with the purpose of actively
-            contributing to my family's livelihood. Based in New York, The Bella Wildflower
+            As a woman and mother of four, I founded The Bella Wildflower with the purpose of
+            actively contributing to my family's livelihood. Based in New York, the studio
             specializes in high-quality floral art.
           </p>
 
           <p className="text-[0.84rem] tracking-[0.04em] leading-[1.9] text-charcoal max-w-[560px] mb-5">
-            We operate under a model of zero financial risk: every arrangement is crafted with
-            intention, financed through client deposits, with no wasted inventory. This allows
-            us to focus on what matters most: the beauty of your moment.
+            Every arrangement is crafted with intention and care. We believe flowers should tell
+            a story — your story. From the first consultation to the final delivery, we bring
+            artistry and a deep love for nature to every piece we create.
           </p>
 
           <p className="text-[0.84rem] tracking-[0.04em] leading-[1.9] text-charcoal max-w-[560px]">
-            From intimate celebrations to grand weddings, we bring artistry, technical excellence,
-            and a deep love for nature to every arrangement we create.
+            From intimate celebrations to grand weddings, we resalt the natural beauty to accompany
+            your most beautiful moments with floral art of the highest quality.
           </p>
 
           <p className="font-cinzel text-sm text-moss mt-8 tracking-wider">— Mariela Barbetti, Founder</p>
