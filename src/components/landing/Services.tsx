@@ -3,25 +3,21 @@ const services = [
     title: 'Weddings & Social Events',
     desc: 'Full-service floral design for weddings, quinceañeras, and life celebrations. From bridal bouquets to ceremony arches and reception centerpieces.',
     icon: '🌿',
-    features: 'Custom packages per table count'
   },
   {
     title: 'Grand Installations',
-    desc: 'Large-scale floral installations tailored to your venue and vision. Custom quotes based on volume and design complexity.',
+    desc: 'Large-scale floral installations tailored to your venue and vision. Custom designs crafted to transform your space.',
     icon: '✨',
-    features: 'Bespoke pricing'
   },
   {
     title: 'Corporate Subscriptions',
-    desc: 'Monthly floral arrangements for hotels, restaurants, and offices. Conservation subscriptions with periodic replacement.',
+    desc: 'Monthly floral arrangements for hotels, restaurants, and offices. Fresh blooms with periodic replacement to keep your space vibrant.',
     icon: '🏢',
-    features: 'Recurring monthly billing'
   },
   {
-    title: 'Web Collections à la Carte',
-    desc: 'Ready-to-order floral arrangements in three sizes: Basic, Medium, and Large. Quick, automated web purchasing for everyday gifting.',
+    title: 'Signature Collections',
+    desc: 'Ready-to-order floral arrangements in three sizes. Perfect for everyday gifting, birthdays, anniversaries, and special moments.',
     icon: '💐',
-    features: 'Fixed round prices'
   },
 ]
 
@@ -46,8 +42,7 @@ export function Services() {
                 <div className="text-3xl mt-1">{s.icon}</div>
                 <div className="flex-1">
                   <h3 className="font-cinzel text-lg text-moss mb-3">{s.title}</h3>
-                  <p className="text-[0.82rem] leading-[1.8] text-charcoal/70 mb-3">{s.desc}</p>
-                  <span className="text-[0.6rem] tracking-[0.2em] uppercase text-terracotta/70">{s.features}</span>
+                  <p className="text-[0.82rem] leading-[1.8] text-charcoal/70">{s.desc}</p>
                 </div>
               </div>
             </div>
@@ -60,7 +55,7 @@ export function Services() {
             <div>
               <p className="font-cinzel text-2xl text-sand mb-2">01</p>
               <p className="text-[0.7rem] tracking-[0.15em] uppercase text-terracotta mb-1">Consultation</p>
-              <p className="text-[0.78rem] text-sand/60">Emotional consulting before every quote</p>
+              <p className="text-[0.78rem] text-sand/60">We listen to your vision</p>
             </div>
             <div>
               <p className="font-cinzel text-2xl text-sand mb-2">02</p>
