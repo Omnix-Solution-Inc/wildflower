@@ -1,15 +1,22 @@
 'use client'
+
 import { useState, useEffect } from 'react'
+import { Bi, useLang } from '@/components/shared/Language'
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const { lang, setLang } = useLang()
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 60)
+    const handleScroll = () => setScrolled(window.scrollY > 50)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  const linkCls = `text-[0.7rem] tracking-[0.18em] uppercase font-medium transition ${
+    scrolled ? 'text-moss hover:text-terracotta' : 'text-sand hover:text-linen'
+  }`
 
   return (
     <>
@@ -21,18 +28,32 @@ export function Navbar() {
             THE BELLA WILDFLOWER
           </span>
         </a>
+
         <div className="hidden md:flex gap-9 items-center">
-          <a href="#about" className={`text-[0.7rem] tracking-[0.18em] uppercase font-medium transition ${scrolled ? 'text-moss hover:text-terracotta' : 'text-sand hover:text-linen'}`}>About</a>
-          <a href="#services" className={`text-[0.7rem] tracking-[0.18em] uppercase font-medium transition ${scrolled ? 'text-moss hover:text-terracotta' : 'text-sand hover:text-linen'}`}>Services</a>
-          <a href="#gallery" className={`text-[0.7rem] tracking-[0.18em] uppercase font-medium transition ${scrolled ? 'text-moss hover:text-terracotta' : 'text-sand hover:text-linen'}`}>Gallery</a>
-          <a href="#testimonials" className={`text-[0.7rem] tracking-[0.18em] uppercase font-medium transition ${scrolled ? 'text-moss hover:text-terracotta' : 'text-sand hover:text-linen'}`}>Reviews</a>
-          <a href="https://wa.me/13217329993?text=Hi%2C%20I%27d%20like%20to%20discuss%20floral%20design%20for%20my%20event"
-             target="_blank" rel="noopener noreferrer"
-             className="px-6 py-2.5 bg-moss text-sand text-[0.65rem] tracking-[0.16em] uppercase font-medium hover:bg-terracotta transition">
-            Inquire
-          </a>
+          <a href="#shop" className={linkCls}><Bi en="Shop" es="Tienda" /></a>
+          <a href="#services" className={linkCls}><Bi en="Our Work" es="Nuestro Trabajo" /></a>
+          <a href="#legacy" className={linkCls}><Bi en="Legacy" es="Legado" /></a>
+          <a href="#contact" className={linkCls}><Bi en="Book Now" es="Reservar" /></a>
+
+          {/* Language toggle */}
+          <div className="flex items-center gap-1 border border-current rounded-full px-1 py-0.5">
+            {(['en', 'es'] as const).map((l) => (
+              <button
+                key={l}
+                onClick={() => setLang(l)}
+                className={`text-[0.6rem] tracking-[0.1em] uppercase font-semibold px-2 py-0.5 rounded-full transition ${
+                  lang === l
+                    ? 'bg-terracotta text-sand'
+                    : scrolled ? 'text-moss/60 hover:text-moss' : 'text-sand/60 hover:text-sand'
+                }`}
+              >
+                {l}
+              </button>
+            ))}
+          </div>
         </div>
-        <button className="md:hidden flex flex-col gap-1.5" onClick={() => setMenuOpen(!menuOpen)}>
+
+        <button className="md:hidden flex flex-col gap-1.5" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
           <span className={`w-[22px] h-0.5 rounded transition ${scrolled ? 'bg-moss' : 'bg-sand'}`}></span>
           <span className={`w-[22px] h-0.5 rounded transition ${scrolled ? 'bg-moss' : 'bg-sand'}`}></span>
           <span className={`w-[22px] h-0.5 rounded transition ${scrolled ? 'bg-moss' : 'bg-sand'}`}></span>
@@ -41,11 +62,14 @@ export function Navbar() {
 
       {menuOpen && (
         <div className="fixed inset-0 bg-sand z-[999] flex flex-col items-center justify-center gap-8 md:hidden">
-          <a href="#about" onClick={() => setMenuOpen(false)} className="text-sm tracking-[0.2em] uppercase text-moss font-medium">About</a>
-          <a href="#services" onClick={() => setMenuOpen(false)} className="text-sm tracking-[0.2em] uppercase text-moss font-medium">Services</a>
-          <a href="#gallery" onClick={() => setMenuOpen(false)} className="text-sm tracking-[0.2em] uppercase text-moss font-medium">Gallery</a>
-          <a href="#testimonials" onClick={() => setMenuOpen(false)} className="text-sm tracking-[0.2em] uppercase text-moss font-medium">Reviews</a>
-          <a href="https://wa.me/13217329993" target="_blank" className="px-8 py-3 bg-moss text-sand text-xs tracking-[0.16em] uppercase font-medium">Inquire</a>
+          <a href="#shop" onClick={() => setMenuOpen(false)} className="text-sm tracking-[0.2em] uppercase text-moss font-medium"><Bi en="Shop" es="Tienda" /></a>
+          <a href="#services" onClick={() => setMenuOpen(false)} className="text-sm tracking-[0.2em] uppercase text-moss font-medium"><Bi en="Our Work" es="Nuestro Trabajo" /></a>
+          <a href="#legacy" onClick={() => setMenuOpen(false)} className="text-sm tracking-[0.2em] uppercase text-moss font-medium"><Bi en="Legacy" es="Legado" /></a>
+          <a href="#contact" onClick={() => setMenuOpen(false)} className="text-sm tracking-[0.2em] uppercase text-moss font-medium"><Bi en="Book Now" es="Reservar" /></a>
+          <div className="flex gap-2 mt-2">
+            <button onClick={() => setLang('en')} className={`px-4 py-2 text-xs tracking-[0.16em] uppercase font-semibold rounded-full ${lang === 'en' ? 'bg-moss text-sand' : 'border border-moss/30 text-moss'}`}>EN</button>
+            <button onClick={() => setLang('es')} className={`px-4 py-2 text-xs tracking-[0.16em] uppercase font-semibold rounded-full ${lang === 'es' ? 'bg-moss text-sand' : 'border border-moss/30 text-moss'}`}>ES</button>
+          </div>
         </div>
       )}
     </>

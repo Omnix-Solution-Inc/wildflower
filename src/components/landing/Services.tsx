@@ -1,73 +1,97 @@
-const services = [
-  {
-    title: 'Weddings & Social Events',
-    desc: 'Full-service floral design for weddings, quinceañeras, and life celebrations. From bridal bouquets to ceremony arches and reception centerpieces.',
-    icon: '🌿',
-  },
-  {
-    title: 'Grand Installations',
-    desc: 'Large-scale floral installations tailored to your venue and vision. Custom designs crafted to transform your space.',
-    icon: '✨',
-  },
-  {
-    title: 'Corporate Subscriptions',
-    desc: 'Monthly floral arrangements for hotels, restaurants, and offices. Fresh blooms with periodic replacement to keep your space vibrant.',
-    icon: '🏢',
-  },
-  {
-    title: 'Signature Collections',
-    desc: 'Ready-to-order floral arrangements in three sizes. Perfect for everyday gifting, birthdays, anniversaries, and special moments.',
-    icon: '💐',
-  },
-]
+'use client'
+
+import { Bi } from '@/components/shared/Language'
+
+const WA = 'https://wa.me/13217329993?text='
 
 export function Services() {
   return (
-    <section id="services" className="py-[100px] px-[6%] bg-sand">
+    <section id="services" className="py-24 px-[6%] bg-sand">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-3 mb-5">
-            <span className="w-6 h-px bg-terracotta"></span>
-            <span className="text-[0.6rem] tracking-[0.3em] uppercase text-terracotta">What We Offer</span>
-            <span className="w-6 h-px bg-terracotta"></span>
-          </div>
-          <h2 className="font-cinzel text-[clamp(1.8rem,3vw,3rem)] text-moss mb-4">Services & Collections</h2>
-          <p className="font-script text-[clamp(1.4rem,2.5vw,2.2rem)] text-terracotta">Designed for every moment</p>
-        </div>
+        <p className="text-center text-[0.6rem] tracking-[0.35em] uppercase text-sage mb-4">
+          <Bi en="— Our Work" es="— Nuestro Trabajo" />
+        </p>
+        <h2 className="text-center font-cinzel text-[clamp(1.8rem,4vw,3rem)] text-moss mb-5">
+          <Bi en="Beyond the bouquet — monumental design." es="Más allá del ramo — diseño monumental." />
+        </h2>
+        <p className="text-center text-[0.85rem] leading-[1.9] text-charcoal/70 max-w-2xl mx-auto mb-16">
+          <Bi
+            en="For weddings, galas, corporate events, and immersive experiences — we design spaces and moments that people remember long after the flowers are gone."
+            es="Para bodas, galas, eventos corporativos y experiencias inmersivas — diseñamos espacios y momentos que las personas recuerdan mucho después de que las flores se hayan ido."
+          />
+        </p>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {services.map((s, i) => (
-            <div key={i} className="bg-white p-8 border border-linen/40 hover:border-terracotta/40 transition group">
-              <div className="flex items-start gap-5">
-                <div className="text-3xl mt-1">{s.icon}</div>
-                <div className="flex-1">
-                  <h3 className="font-cinzel text-lg text-moss mb-3">{s.title}</h3>
-                  <p className="text-[0.82rem] leading-[1.8] text-charcoal/70">{s.desc}</p>
-                </div>
-              </div>
+        {/* 01 — Events & Installations */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="grid grid-cols-2 gap-4">
+            <div className="overflow-hidden shadow-md">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/gallery/06_arch_white_green.jpg" alt="Event detail" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-700" />
             </div>
-          ))}
-        </div>
-
-        {/* Process strip */}
-        <div className="mt-12 bg-moss py-8 px-8 rounded-sm">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div>
-              <p className="font-cinzel text-2xl text-sand mb-2">01</p>
-              <p className="text-[0.7rem] tracking-[0.15em] uppercase text-terracotta mb-1">Consultation</p>
-              <p className="text-[0.78rem] text-sand/60">We listen to your vision</p>
-            </div>
-            <div>
-              <p className="font-cinzel text-2xl text-sand mb-2">02</p>
-              <p className="text-[0.7rem] tracking-[0.15em] uppercase text-terracotta mb-1">Design</p>
-              <p className="text-[0.78rem] text-sand/60">Custom floral art crafted with intention</p>
-            </div>
-            <div>
-              <p className="font-cinzel text-2xl text-sand mb-2">03</p>
-              <p className="text-[0.7rem] tracking-[0.15em] uppercase text-terracotta mb-1">Delivery</p>
-              <p className="text-[0.78rem] text-sand/60">Premium presentation and setup</p>
+            <div className="overflow-hidden shadow-md mt-8">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/gallery/08_arch_full_pink.jpg" alt="Full installation" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-700" />
             </div>
           </div>
+          <div>
+            <p className="text-[0.6rem] tracking-[0.3em] uppercase text-terracotta mb-3">
+              <Bi en="01 — Events & Installations" es="01 — Eventos e Instalaciones" />
+            </p>
+            <h3 className="font-cinzel text-[clamp(1.3rem,2.5vw,2rem)] text-moss leading-snug mb-5">
+              <Bi en="Floral Production & Monumental Events" es="Producción Floral y Eventos Monumentales" />
+            </h3>
+            <p className="text-[0.85rem] leading-[2] text-charcoal/70 mb-7">
+              <Bi
+                en="Luxury floral installations for vineyard weddings, barn galas, editorial shoots, and corporate events across Rochester, Santa Cruz, and the Finger Lakes Region. Every design is a living sculpture — intentional, seasonal, and breathtakingly singular."
+                es="Instalaciones florales de lujo para bodas en viñedos, galas en graneros, sesiones editoriales y eventos corporativos en Rochester, Santa Cruz y la Región de Finger Lakes. Cada diseño es una escultura viva — intencional, estacional y singular."
+              />
+            </p>
+            <a href={`${WA}${encodeURIComponent("Hi! I'd like to inquire about floral production for an event.")}`}
+               target="_blank" rel="noopener noreferrer"
+               className="inline-block text-[0.65rem] tracking-[0.2em] uppercase font-semibold text-moss border-b-2 border-terracotta pb-1 hover:text-terracotta transition">
+              <Bi en="Inquire for Events →" es="Consultar por Eventos →" />
+            </a>
+          </div>
+        </div>
+
+        {/* 02 — The Wildflower Experience */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="lg:order-2 grid grid-cols-2 gap-4">
+            <div className="overflow-hidden shadow-md">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/flores_taller.png" alt="Workshop moment" className="w-full h-64 object-cover bg-sand-dark hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div className="overflow-hidden shadow-md mt-8">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/gallery/09_garland_runner.jpg" alt="Group experience" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-700" />
+            </div>
+          </div>
+          <div className="lg:order-1">
+            <p className="text-[0.6rem] tracking-[0.3em] uppercase text-terracotta mb-3">
+              <Bi en="02 — The Wildflower Experience" es="02 — La Experiencia Wildflower" />
+            </p>
+            <h3 className="font-cinzel text-[clamp(1.3rem,2.5vw,2rem)] text-moss leading-snug mb-5">
+              <Bi en="Coaching & Wellness Through Flowers" es="Coaching y Bienestar a Través de las Flores" />
+            </h3>
+            <p className="text-[0.85rem] leading-[2] text-charcoal/70 mb-7">
+              <Bi
+                en="Immersive workshops and coaching sessions where flowers become tools of transformation. For individuals seeking growth, and companies in Rochester and Finger Lakes looking for meaningful team experiences."
+                es="Talleres inmersivos y sesiones de coaching donde las flores se convierten en herramientas de transformación. Para personas en proceso de crecimiento, y empresas en Rochester y Finger Lakes que buscan experiencias de equipo con significado."
+              />
+            </p>
+            <a href={`${WA}${encodeURIComponent('Hi! I\'d like to book a Wildflower Experience (coaching & flowers workshop).')}`}
+               target="_blank" rel="noopener noreferrer"
+               className="inline-block text-[0.65rem] tracking-[0.2em] uppercase font-semibold text-moss border-b-2 border-terracotta pb-1 hover:text-terracotta transition">
+              <Bi en="Book an Experience →" es="Reservar una Experiencia →" />
+            </a>
+          </div>
+        </div>
+
+        {/* Local strip */}
+        <div className="mt-20 text-center border-t border-moss/10 pt-10">
+          <p className="text-[0.6rem] tracking-[0.3em] uppercase text-sage">
+            <Bi en="📍 Your Local Florist — Based in Ontario, NY, serving Rochester, Santa Cruz, and Western New York" es="📍 Tu Floristería Local — Basada en Ontario, NY, sirviendo a Rochester, Santa Cruz y el oeste de Nueva York" />
+          </p>
         </div>
       </div>
     </section>

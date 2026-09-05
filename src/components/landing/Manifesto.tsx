@@ -1,0 +1,45 @@
+'use client'
+
+import { Bi } from '@/components/shared/Language'
+
+export function Manifesto() {
+  return (
+    <section id="manifesto" className="py-24 px-[6%] bg-sand">
+      <div className="max-w-4xl mx-auto text-center">
+        <p className="text-[0.6rem] tracking-[0.35em] uppercase text-sage mb-6">
+          <Bi en="— The Manifesto" es="— El Manifiesto" />
+        </p>
+
+        <blockquote className="font-script text-[clamp(1.5rem,3vw,2.4rem)] text-moss leading-snug mb-10">
+          <Bi
+            en="“Inspired by Alena, Ana, Alejandro, and Abraham — and the untamed beauty they carry within.”"
+            es="“Inspirada por Alena, Ana, Alejandro y Abraham — y la belleza indomable que llevan dentro.”"
+          />
+        </blockquote>
+
+        <p className="text-[0.9rem] leading-[2] text-charcoal/80 max-w-2xl mx-auto mb-10">
+          <Bi
+            en="Every arrangement is a conversation between nature and intention. Every coaching session is an invitation to remember who you are beyond your roles and wounds. We exist where beauty meets conscious transformation — where the seasons of Finger Lakes become the backdrop for your most meaningful celebrations."
+            es="Cada arreglo es una conversación entre la naturaleza y la intención. Cada sesión de coaching es una invitación a recordar quién eres más allá de tus roles y heridas. Existimos donde la belleza se encuentra con la transformación consciente — donde las estaciones de Finger Lakes se convierten en el escenario de tus celebraciones más significativas."
+          />
+        </p>
+
+        <p className="text-[0.7rem] tracking-[0.22em] uppercase text-terracotta mb-12">
+          <Bi
+            en="Awakening souls through flowers. A local florist with a global soul — rooted in Ontario, NY, blooming across Rochester, Santa Cruz, and all of Western New York."
+            es="Despertando almas a través de las flores. Una floristería local con alma global — arraigada en Ontario, NY, floreciendo en Rochester, Santa Cruz y todo el oeste de Nueva York."
+          />
+        </p>
+
+        {/* Founder */}
+        <div className="flex flex-col items-center gap-4">
+          <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-linen shadow-md">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/founder.jpg" alt="Mariela Barbetti" className="w-full h-full object-cover" />
+          </div>
+          <span className="font-cinzel text-sm tracking-[0.2em] text-moss">Mariela Barbetti</span>
+        </div>
+      </div>
+    </section>
+  )
+}

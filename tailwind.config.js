@@ -11,6 +11,8 @@ module.exports = {
         terracotta: '#B88373',
         linen: '#E3C2B9',
         sand: '#F4EFEB',
+        'sand-dark': '#EAE3DD',
+        'off-white': '#FAF7F4',
         charcoal: '#2F2A27',
       },
       fontFamily: {
