@@ -76,11 +76,15 @@ export function Weddings() {
           <span className="inline-block w-12 h-px bg-terracotta mt-4"></span>
         </div>
 
-        <div className="mt-16 max-w-md mx-auto text-center">
+        <div className="mt-16 max-w-4xl mx-auto text-center">
           <p className="text-[0.65rem] tracking-[0.35em] uppercase text-terracotta mb-8">
             <Bi en="Real Celebrations" es="Celebraciones Reales" />
           </p>
-          <img src="/gallery/wedding_reception_couple.jpg" alt="Real wedding reception with rose bouquet" className="w-full aspect-[3/5] object-cover" />
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+            <img src="/gallery/wedding_reception_couple.jpg" alt="Real wedding reception with rose bouquet" className="w-full aspect-[3/5] object-cover" />
+            <img src="/gallery/wedding_outdoor_ceremony.jpg" alt="Outdoor wedding ceremony under a floral arch" className="w-full aspect-[3/5] object-cover" />
+            <img src="/gallery/wedding_beach_arch.jpg" alt="Beach wedding with sunflower arch" className="w-full aspect-[3/5] object-cover col-span-2 md:col-span-1 mx-auto max-w-[240px]" />
+          </div>
         </div>
     </section>
   )
