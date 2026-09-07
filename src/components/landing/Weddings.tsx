@@ -12,8 +12,8 @@ export function Weddings() {
 
         <div className="relative">
           <img
-            src="/gallery/06_arch_white_green.jpg"
-            alt="Wedding floral arch"
+            src="/gallery/wedding_beach_arch.jpg"
+            alt="Real wedding — beach ceremony with sunflower arch"
             className="w-full aspect-[4/5] object-cover"
           />
           <div className="absolute -bottom-5 -right-3 md:-right-5 bg-linen px-7 py-5">
@@ -74,6 +74,13 @@ export function Weddings() {
           </a>
 
           <span className="inline-block w-12 h-px bg-terracotta mt-4"></span>
+        </div>
+
+        <div className="mt-16 max-w-md mx-auto text-center">
+          <p className="text-[0.65rem] tracking-[0.35em] uppercase text-terracotta mb-8">
+            <Bi en="Real Celebrations" es="Celebraciones Reales" />
+          </p>
+          <img src="/gallery/wedding_reception_couple.jpg" alt="Real wedding reception with rose bouquet" className="w-full aspect-[3/5] object-cover" />
         </div>
     </section>
   )
