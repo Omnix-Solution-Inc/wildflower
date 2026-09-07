@@ -34,8 +34,8 @@ export function Legacy() {
           </p>
           <p className="text-[0.85rem] leading-[2] text-sand/80 mb-8">
             <Bi
-              en="Rooted in the belief that beauty is intentional, that flowers hold memory, and that the most powerful spaces are those designed with soul — this is the legacy being built, one arrangement and one conversation at a time, right here in Western New York."
-              es="Arraigada en la creencia de que la belleza es intencional, que las flores guardan memoria, y que los espacios más poderosos son los diseñados con alma — este es el legado que se construye, un arreglo y una conversación a la vez, aquí mismo en el oeste de Nueva York."
+              en="Rooted in the belief that beauty is intentional, that flowers hold memory, and that the most powerful spaces are those designed with soul — this is the legacy being built, one arrangement and one conversation at a time, right here in Ontario, NY."
+              es="Arraigada en la creencia de que la belleza es intencional, que las flores guardan memoria, y que los espacios más poderosos son los diseñados con alma — este es el legado que se construye, un arreglo y una conversación a la vez, aquí mismo en Ontario, NY."
             />
           </p>
           <div className="flex items-center gap-6 flex-wrap">

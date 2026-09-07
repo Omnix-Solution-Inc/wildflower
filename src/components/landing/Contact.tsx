@@ -101,7 +101,7 @@ export function Contact() {
         </form>
 
         <p className="mt-8 text-[0.6rem] tracking-[0.25em] uppercase text-charcoal/50">
-          <Bi en="📍 Ontario, NY · Rochester · Western New York" es="📍 Ontario, NY · Rochester · Oeste de Nueva York" />
+          <Bi en="📍 Ontario, NY · Rochester · Webster" es="📍 Ontario, NY · Rochester · Webster" />
         </p>
       </div>
     </section>
