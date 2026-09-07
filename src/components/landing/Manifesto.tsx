@@ -17,13 +17,6 @@ export function Manifesto() {
           />
         </blockquote>
 
-        <p className="text-[0.9rem] leading-[2] text-charcoal/80 max-w-2xl mx-auto mb-10">
-          <Bi
-            en="Every arrangement is a conversation between nature and intention. Every coaching session is an invitation to remember who you are beyond your roles and wounds. We exist where beauty meets conscious transformation — where the seasons of Finger Lakes become the backdrop for your most meaningful celebrations."
-            es="Cada arreglo es una conversación entre la naturaleza y la intención. Cada sesión de coaching es una invitación a recordar quién eres más allá de tus roles y heridas. Existimos donde la belleza se encuentra con la transformación consciente — donde las estaciones de Finger Lakes se convierten en el escenario de tus celebraciones más significativas."
-          />
-        </p>
-
         <p className="text-[0.7rem] tracking-[0.22em] uppercase text-terracotta mb-12">
           <Bi
             en="Awakening souls through flowers. A local florist with a global soul — rooted in Ontario, NY, blooming across Rochester, Santa Cruz, and all of Western New York."
