@@ -8,7 +8,7 @@ export function Hero() {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-moss via-moss/90 to-charcoal">
         <div className="absolute inset-0 opacity-30" style={{
-          backgroundImage: 'url(/gallery/real_01.jpg)',
+          backgroundImage: 'url(/gallery/08_arch_full_pink.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}></div>
