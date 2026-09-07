@@ -80,18 +80,13 @@ export function Collection() {
     <section id="coleccion" className="py-24 px-[6%] bg-linen">
       <div className="max-w-6xl mx-auto">
 
-        <div className="grid md:grid-cols-5 gap-10 items-center mb-16">
-          <div className="md:col-span-3 text-center md:text-left">
-            <p className="text-[0.65rem] tracking-[0.35em] uppercase text-terracotta mb-5">
-              <Bi en="Our Botanical Collection" es="Nuestra Colección Botánica" />
-            </p>
-            <h2 className="font-script text-[clamp(2rem,4vw,3.4rem)] text-moss leading-snug mb-6">
-              <Bi en="The 10 most popular wedding flowers." es="Las 10 flores de boda más populares." />
-            </h2>
-          </div>
-          <div className="md:col-span-2">
-            <img src="/gallery/colleccion_botanica.jpg" alt="Botanical collection" className="w-full aspect-[3/4] object-cover" />
-          </div>
+        <div className="max-w-2xl mx-auto text-center mb-16">
+          <p className="text-[0.65rem] tracking-[0.35em] uppercase text-terracotta mb-5">
+            <Bi en="Our Botanical Collection" es="Nuestra Colección Botánica" />
+          </p>
+          <h2 className="font-script text-[clamp(2rem,4vw,3.4rem)] text-moss leading-snug mb-6">
+            <Bi en="The 10 most popular wedding flowers." es="Las 10 flores de boda más populares." />
+          </h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-x-14 gap-y-10">
