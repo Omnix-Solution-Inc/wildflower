@@ -13,8 +13,8 @@ export function Footer() {
             <h3 className="font-cinzel text-lg text-sand mb-4 tracking-wider">THE BELLA WILDFLOWER</h3>
             <p className="text-sand/60 text-sm leading-relaxed mb-4">
               <Bi
-                en="Choose to Bloom Untamed. A boutique floral studio and coaching space born in Ontario, NY — serving Rochester, Santa Cruz, and Western New York with intentional, soul-driven floral design."
-                es="Elige Florecer sin Ataduras. Un estudio floral boutique y espacio de coaching nacido en Ontario, NY — sirviendo a Rochester, Santa Cruz y el oeste de Nueva York con diseño floral intencional y con alma."
+                en="Choose to Bloom Untamed. A boutique floral studio born in Ontario, NY — serving Rochester, Santa Cruz, and Western New York with intentional, soul-driven floral design."
+                es="Elige Florecer sin Ataduras. Un estudio floral boutique nacido en Ontario, NY — sirviendo a Rochester, Santa Cruz y el oeste de Nueva York con diseño floral intencional y con alma."
               />
             </p>
             <p className="text-sand/40 text-xs">Ontario, NY · Rochester · Santa Cruz · Western New York</p>

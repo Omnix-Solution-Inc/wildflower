@@ -35,8 +35,8 @@ export function Hero() {
 
         <p className="text-[0.85rem] tracking-[0.06em] leading-[1.9] text-sand/90 max-w-[560px] mx-auto mb-10">
           <Bi
-            en="A boutique floral studio and coaching space born in Ontario, NY. Serving Rochester, Santa Cruz, and Western New York with intentional, soul-driven floral design — for events, everyday moments, and personal transformation."
-            es="Un estudio floral boutique y espacio de coaching nacido en Ontario, NY. Sirviendo a Rochester, Santa Cruz y el oeste de Nueva York con diseño floral intencional y con alma — para eventos, momentos cotidianos y transformación personal."
+            en="A boutique floral studio born in Ontario, NY. Serving Rochester, Santa Cruz, and Western New York with intentional, soul-driven floral design — for events, weddings, and everyday moments."
+            es="Un estudio floral boutique nacido en Ontario, NY. Sirviendo a Rochester, Santa Cruz y el oeste de Nueva York con diseño floral intencional y con alma — para eventos, bodas y momentos cotidianos."
           />
         </p>
 
