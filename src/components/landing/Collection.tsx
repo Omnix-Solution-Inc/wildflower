@@ -88,12 +88,6 @@ export function Collection() {
             <h2 className="font-script text-[clamp(2rem,4vw,3.4rem)] text-moss leading-snug mb-6">
               <Bi en="The 10 most popular wedding flowers." es="Las 10 flores de boda más populares." />
             </h2>
-            <p className="text-[0.85rem] leading-[1.9] text-sage">
-              <Bi
-                en="Because we're a team working to make your celebration memorable and unforgettable, every flower is selected with care and purpose to reflect your essence."
-                es="Porque somos un equipo para lograr que tu celebración sea memorable e inolvidable, cada flor es seleccionada con mimo y propósito para reflejar tu esencia."
-              />
-            </p>
           </div>
           <div className="md:col-span-2">
             <img src="/gallery/colleccion_botanica.jpg" alt="Botanical collection" className="w-full aspect-[3/4] object-cover" />
