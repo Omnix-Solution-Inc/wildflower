@@ -12,8 +12,8 @@ export function Weddings() {
 
         <div className="relative">
           <img
-            src="/gallery/wedding_beach_arch.jpg"
-            alt="Real wedding — beach ceremony with sunflower arch"
+            src="/gallery/wedding_beach_arch_couple.jpg"
+            alt="Real wedding — couple under sunflower arch at beach ceremony"
             className="w-full aspect-[4/5] object-cover"
           />
           <div className="absolute -bottom-5 -right-3 md:-right-5 bg-linen px-7 py-5">
@@ -83,7 +83,7 @@ export function Weddings() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
             <img src="/gallery/wedding_reception_couple.jpg" alt="Real wedding reception with rose bouquet" className="w-full aspect-[3/5] object-cover" />
             <img src="/gallery/wedding_outdoor_ceremony.jpg" alt="Outdoor wedding ceremony under a floral arch" className="w-full aspect-[3/5] object-cover" />
-            <img src="/gallery/wedding_beach_arch.jpg" alt="Beach wedding with sunflower arch" className="w-full aspect-[3/5] object-cover col-span-2 md:col-span-1 mx-auto max-w-[240px]" />
+            <img src="/gallery/wedding_beach_arch_couple.jpg" alt="Couple under sunflower arch at beach wedding" className="w-full aspect-[3/5] object-cover col-span-2 md:col-span-1 mx-auto max-w-[240px]" />
           </div>
         </div>
     </section>
