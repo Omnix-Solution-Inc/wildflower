@@ -28,14 +28,14 @@ export function Legacy() {
           </h2>
           <p className="text-[0.85rem] leading-[2] text-sand/80 mb-6">
             <Bi
-              en="The Bella Wildflower is more than a floral studio. It is a declaration of what is possible when a woman chooses to stop surviving and start creating — for herself, and for every soul that comes after her. Born in Ontario, NY. Grown in the wildness of Finger Lakes."
-              es="The Bella Wildflower es más que un estudio floral. Es una declaración de lo que es posible cuando una mujer elige dejar de sobrevivir y comenzar a crear — para sí misma, y para cada alma que venga después. Nacida en Ontario, NY. Crecida en la naturaleza salvaje de Finger Lakes."
+              en="The Bella Wildflower is more than a floral studio. It is a declaration of what is possible when a woman chooses to stop surviving and start creating — for herself, and for every soul that comes after her. Born in Wayne County, NY. Grown in the wildness of the Finger Lakes."
+              es="The Bella Wildflower es más que un estudio floral. Es una declaración de lo que es posible cuando una mujer elige dejar de sobrevivir y comenzar a crear — para sí misma, y para cada alma que venga después. Nacida en el condado de Wayne, NY. Crecida en la naturaleza salvaje de los Finger Lakes."
             />
           </p>
           <p className="text-[0.85rem] leading-[2] text-sand/80 mb-8">
             <Bi
-              en="Rooted in the belief that beauty is intentional, that flowers hold memory, and that the most powerful spaces are those designed with soul — this is the legacy being built, one arrangement and one conversation at a time, right here in Ontario, NY."
-              es="Arraigada en la creencia de que la belleza es intencional, que las flores guardan memoria, y que los espacios más poderosos son los diseñados con alma — este es el legado que se construye, un arreglo y una conversación a la vez, aquí mismo en Ontario, NY."
+              en="Rooted in the belief that beauty is intentional, that flowers hold memory, and that the most powerful spaces are those designed with soul — this is the legacy being built, one arrangement and one conversation at a time, right here in Wayne County, NY."
+              es="Arraigada en la creencia de que la belleza es intencional, que las flores guardan memoria, y que los espacios más poderosos son los diseñados con alma — este es el legado que se construye, un arreglo y una conversación a la vez, aquí mismo en el condado de Wayne, NY."
             />
           </p>
           <div className="flex items-center gap-6 flex-wrap">

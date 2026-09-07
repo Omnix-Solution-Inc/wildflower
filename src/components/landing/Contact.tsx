@@ -101,7 +101,7 @@ export function Contact() {
         </form>
 
         <p className="mt-8 text-[0.6rem] tracking-[0.25em] uppercase text-charcoal/50">
-          <Bi en="📍 Ontario, NY · Rochester · Webster" es="📍 Ontario, NY · Rochester · Webster" />
+          <Bi en="📍 Wayne County · Monroe County · Ontario County, NY" es="📍 Condado de Wayne · Condado de Monroe · Condado de Ontario, NY" />
         </p>
       </div>
     </section>

@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'The Bella Wildflower — Choose to Bloom Untamed',
-  description: 'A boutique floral studio born in Ontario, NY. Intentional, soul-driven floral design for events, weddings, and everyday moments — serving Rochester and Webster, NY.',
+  description: 'A boutique floral studio serving Wayne, Monroe, and Ontario Counties, NY. Intentional, soul-driven floral design for events, weddings, and everyday moments.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

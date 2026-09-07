@@ -68,8 +68,8 @@ export function Shop() {
         </h2>
         <p className="text-center text-[0.85rem] leading-[1.9] text-charcoal/70 max-w-xl mx-auto mb-14">
           <Bi
-            en="Finished arrangements available for pickup or local delivery in Ontario, Rochester, and Webster, NY. Each piece is designed with intention — crafted to bring beauty into your space."
-            es="Arreglos terminados disponibles para recoger o entrega local en Ontario, Rochester y Webster, NY. Cada pieza está diseñada con intención — creada para llevar belleza a tu espacio."
+            en="Finished arrangements available for pickup or local delivery in Wayne County, Monroe County, and Ontario County, NY. Each piece is designed with intention — crafted to bring beauty into your space."
+            es="Arreglos terminados disponibles para recoger o entrega local en los condados de Wayne, Monroe y Ontario, NY. Cada pieza está diseñada con intención — creada para llevar belleza a tu espacio."
           />
         </p>
 

@@ -42,8 +42,8 @@ export function Services() {
             </h3>
             <p className="text-[0.85rem] leading-[2] text-charcoal/70 mb-7">
               <Bi
-                en="Luxury floral installations for vineyard weddings, barn galas, editorial shoots, and corporate events across Rochester, Webster, and the Finger Lakes Region. Every design is a living sculpture — intentional, seasonal, and breathtakingly singular."
-                es="Instalaciones florales de lujo para bodas en viñedos, galas en graneros, sesiones editoriales y eventos corporativos en Rochester, Webster y la Región de Finger Lakes. Cada diseño es una escultura viva — intencional, estacional y singular."
+                en="Luxury floral installations for vineyard weddings, barn galas, editorial shoots, and corporate events across Wayne County, Monroe County, and Ontario County. Every design is a living sculpture — intentional, seasonal, and breathtakingly singular."
+                es="Instalaciones florales de lujo para bodas en viñedos, galas en graneros, sesiones editoriales y eventos corporativos en los condados de Wayne, Monroe y Ontario. Cada diseño es una escultura viva — intencional, estacional y singular."
               />
             </p>
             <a href={`${WA}${encodeURIComponent("Hi! I'd like to inquire about floral production for an event.")}`}
@@ -75,8 +75,8 @@ export function Services() {
             </h3>
             <p className="text-[0.85rem] leading-[2] text-charcoal/70 mb-7">
               <Bi
-                en="Immersive workshops and coaching sessions where flowers become tools of transformation. For individuals seeking growth, and companies in Rochester and Finger Lakes looking for meaningful team experiences."
-                es="Talleres inmersivos y sesiones de coaching donde las flores se convierten en herramientas de transformación. Para personas en proceso de crecimiento, y empresas en Rochester y Finger Lakes que buscan experiencias de equipo con significado."
+                en="Immersive workshops and coaching sessions where flowers become tools of transformation. For individuals seeking growth, and companies across Wayne, Monroe, and Ontario Counties looking for meaningful team experiences."
+                es="Talleres inmersivos y sesiones de coaching donde las flores se convierten en herramientas de transformación. Para personas en proceso de crecimiento, y empresas en los condados de Wayne, Monroe y Ontario que buscan experiencias de equipo con significado."
               />
             </p>
             <a href={`${WA}${encodeURIComponent('Hi! I\'d like to book a Wildflower Experience (coaching & flowers workshop).')}`}
@@ -90,7 +90,7 @@ export function Services() {
         {/* Local strip */}
         <div className="mt-20 text-center border-t border-moss/10 pt-10">
           <p className="text-[0.6rem] tracking-[0.3em] uppercase text-sage">
-            <Bi en="📍 Your Local Florist — Based in Ontario, NY, serving Rochester and Webster" es="📍 Tu Floristería Local — Basada en Ontario, NY, sirviendo a Rochester y Webster" />
+            <Bi en="📍 Your Local Florist — Serving Wayne, Monroe, and Ontario Counties, NY" es="📍 Tu Floristería Local — Sirviendo a los condados de Wayne, Monroe y Ontario, NY" />
           </p>
         </div>
       </div>

@@ -19,8 +19,8 @@ export function Manifesto() {
 
         <p className="text-[0.7rem] tracking-[0.22em] uppercase text-terracotta mb-12">
           <Bi
-            en="Awakening souls through flowers. A local florist with a global soul — rooted in Ontario, NY, blooming across Rochester and Webster."
-            es="Despertando almas a través de las flores. Una floristería local con alma global — arraigada en Ontario, NY, floreciendo en Rochester y Webster."
+            en="Awakening souls through flowers. A local florist with a global soul — rooted in Wayne County, NY, blooming across Monroe and Ontario Counties."
+            es="Despertando almas a través de las flores. Una floristería local con alma global — arraigada en el condado de Wayne, NY, floreciendo en los condados de Monroe y Ontario."
           />
         </p>
 
