@@ -21,10 +21,14 @@ export function Contact() {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault()
-    const interestEn = form.interest
-      ? interests.find((i) => (lang === 'en' ? i.en === form.interest : i.es === form.interest))?.en || form.interest
-      : ''
-    const msg = `Hi! I'm ${form.firstName} ${form.lastName}.\nEmail: ${form.email}\nI'm looking for: ${interestEn}\nMy vision: ${form.vision}`
+    const selected = form.interest
+      ? interests.find((i) => (lang === 'en' ? i.en === form.interest : i.es === form.interest))
+      : undefined
+    const interestEn = selected?.en || form.interest
+    const interestEs = selected?.es || form.interest
+    const msg = lang === 'en'
+      ? `Hi! I'm ${form.firstName} ${form.lastName}.\nEmail: ${form.email}\nI'm looking for: ${interestEn}\nMy vision: ${form.vision}`
+      : `¡Hola! Soy ${form.firstName} ${form.lastName}.\nEmail: ${form.email}\nBusco: ${interestEs}\nMi visión: ${form.vision}`
     window.open(`${WA}${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer')
   }
 
@@ -35,7 +39,7 @@ export function Contact() {
           <Bi en="— Begin Here" es="— Comienza Aquí" />
         </p>
         <h2 className="font-cinzel text-[clamp(1.8rem,4vw,3rem)] text-moss mb-5">
-          <Bi en="Let's create something unforgettable." es="Creemos algo inolvidable." />
+          <Bi en="Let's create something unforgettable." es="Vamos a crear algo inolvidable." />
         </h2>
         <p className="text-[0.85rem] leading-[1.9] text-charcoal/70 max-w-xl mx-auto mb-10">
           <Bi

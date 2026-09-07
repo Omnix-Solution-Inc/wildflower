@@ -63,7 +63,7 @@ const FLOWERS = [
     es_name: 'Dalias', en_name: 'Dahlias',
     es_style: 'Presencia imponente y elegancia duradera.',
     en_style: 'Imposing presence and lasting elegance.',
-    es_desc: 'Especialmente las variedades plato de cena, que destacan por su tamaño generoso y su capacidad de transformar cualquier espacio con elegancia.',
+    es_desc: 'Especialmente las variedades tipo plato de cena, que destacan por su tamaño generoso y su capacidad de transformar cualquier espacio con elegancia.',
     en_desc: 'Especially the dinner-plate varieties, which stand out for their generous size and their ability to transform any space with elegance.'
   },
   {

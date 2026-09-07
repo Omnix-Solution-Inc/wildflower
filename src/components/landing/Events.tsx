@@ -15,7 +15,7 @@ export function Events() {
         </p>
 
         <h2 className="font-script text-[clamp(2.2rem,5vw,3.8rem)] text-moss leading-snug mb-10">
-          <Bi en="Your one place for it all." es="Tu lugar para todo en uno." />
+          <Bi en="Your one place for it all." es="Un solo lugar para todo." />
         </h2>
 
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-12">
@@ -44,7 +44,7 @@ export function Events() {
           href="#contact"
           className="inline-block px-10 py-4 bg-terracotta text-linen text-[0.65rem] tracking-[0.22em] uppercase font-semibold hover:bg-moss transition cursor-pointer"
         >
-          <Bi en="Let's Start Planning Your Perfect Event" es="Empecemos a Planear Tu Evento Perfecto" />
+          <Bi en="Let's Start Planning Your Perfect Event" es="Empecemos a Planificar Tu Evento Perfecto" />
         </a>
 
       </div>

@@ -33,7 +33,7 @@ export function Weddings() {
           <p className="text-[0.9rem] leading-[1.9] text-sand/90 mb-10">
             <Bi
               en="Floral arrangements are one of the most customizable aspects of your big day — and usually the second most photographed element, just behind you and your loved ones. Whether you're taking your first steps or you already know what you want, I want to make sure you receive the creations you dream of. From the moment we first meet, we're a team working to make your celebration memorable — guiding you step by step and staying present throughout your entire event."
-              es="Los arreglos florales son uno de los aspectos más personalizables de tu gran día y, por lo general, el segundo elemento al que más fotos se le toman, solo por detrás de ti y de tus seres queridos. Ya sea que estés dando los primeros pasos o que ya sepas lo que quieres, quiero asegurarme de que recibas las creaciones con las que sueñas. Por eso, desde el primer momento en que nos reunimos, somos un equipo para lograr que tu celebración sea memorable, acompañándote paso a paso y estando presente durante todo el evento."
+              es="Los arreglos florales son uno de los aspectos más personalizables de tu gran día y, por lo general, el segundo elemento más fotografiado, solo por detrás de ti y de tus seres queridos. Ya sea que estés dando los primeros pasos o que ya sepas lo que quieres, quiero asegurarme de que recibas las creaciones con las que sueñas. Por eso, desde el primer momento en que nos reunimos, somos un equipo para lograr que tu celebración sea memorable, acompañándote paso a paso y estando presente durante todo el evento."
             />
           </p>
 

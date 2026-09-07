@@ -23,7 +23,7 @@ export function Legacy() {
           <h2 className="font-cinzel text-[clamp(1.8rem,4vw,3rem)] text-white leading-tight mb-7">
             <Bi
               en="Built for the next generation to bloom untamed."
-              es="Construido para que la próxima generación florezca sin ataduras."
+              es="Un legado para que la próxima generación florezca sin ataduras."
             />
           </h2>
           <p className="text-[0.85rem] leading-[2] text-sand/80 mb-6">

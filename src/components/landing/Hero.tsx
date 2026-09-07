@@ -65,7 +65,7 @@ export function Hero() {
           <span><Bi en="Rochester · Santa Cruz · Western NY" es="Rochester · Santa Cruz · Oeste de NY" /></span>
           <span><Bi en="Custom Arrangements · Events" es="Arreglos a Medida · Eventos" /></span>
           <span><Bi en="Wildflower Experience" es="Experiencia Wildflower" /></span>
-          <span><Bi en="ICF Member Coach" es="Coach Miembro ICF" /></span>
+          <span><Bi en="ICF Member Coach" es="Coach Miembro de ICF" /></span>
         </div>
       </div>
     </section>

@@ -31,7 +31,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[0.6rem] tracking-[0.3em] uppercase text-terracotta mb-4"><Bi en="Connect" es="Conectar" /></h4>
+            <h4 className="text-[0.6rem] tracking-[0.3em] uppercase text-terracotta mb-4"><Bi en="Connect" es="Contacto" /></h4>
             <a href={`${WA}${encodeURIComponent("Hi! I'd like to discuss a floral design.")}`}
                target="_blank" rel="noopener noreferrer"
                className="text-sand/70 text-sm hover:text-sand transition block mb-3"><Bi en="WhatsApp Inquiry" es="Consulta por WhatsApp" /></a>
