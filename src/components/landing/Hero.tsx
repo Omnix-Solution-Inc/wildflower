@@ -20,7 +20,7 @@ export function Hero() {
         <div className="flex items-center justify-center gap-3.5 mb-6">
           <span className="w-8 h-px bg-linen"></span>
           <span className="text-[0.65rem] tracking-[0.3em] uppercase text-linen">
-            <Bi en="Ontario · Rochester · Santa Cruz · Western NY" es="Ontario · Rochester · Santa Cruz · Oeste de NY" />
+            <Bi en="Ontario · Rochester · Western NY" es="Ontario · Rochester · Oeste de NY" />
           </span>
           <span className="w-8 h-px bg-linen"></span>
         </div>
@@ -35,8 +35,8 @@ export function Hero() {
 
         <p className="text-[0.85rem] tracking-[0.06em] leading-[1.9] text-sand/90 max-w-[560px] mx-auto mb-10">
           <Bi
-            en="A boutique floral studio born in Ontario, NY. Serving Rochester, Santa Cruz, and Western New York with intentional, soul-driven floral design — for events, weddings, and everyday moments."
-            es="Un estudio floral boutique nacido en Ontario, NY. Sirviendo a Rochester, Santa Cruz y el oeste de Nueva York con diseño floral intencional y con alma — para eventos, bodas y momentos cotidianos."
+            en="A boutique floral studio born in Ontario, NY. Serving Rochester and Western New York with intentional, soul-driven floral design — for events, weddings, and everyday moments."
+            es="Un estudio floral boutique nacido en Ontario, NY. Sirviendo a Rochester y el oeste de Nueva York con diseño floral intencional y con alma — para eventos, bodas y momentos cotidianos."
           />
         </p>
 
@@ -62,7 +62,7 @@ export function Hero() {
       <div className="absolute bottom-0 left-0 right-0 border-t border-sand/10 bg-moss/40 backdrop-blur-sm py-4 hidden md:block">
         <div className="flex justify-center gap-10 text-[0.6rem] tracking-[0.22em] uppercase text-sand/70 flex-wrap px-6">
           <span><Bi en="Local Florist · Ontario NY" es="Floristería Local · Ontario NY" /></span>
-          <span><Bi en="Rochester · Santa Cruz · Western NY" es="Rochester · Santa Cruz · Oeste de NY" /></span>
+          <span><Bi en="Rochester · Western NY" es="Rochester · Oeste de NY" /></span>
           <span><Bi en="Custom Arrangements · Events" es="Arreglos a Medida · Eventos" /></span>
           <span><Bi en="Wildflower Experience" es="Experiencia Wildflower" /></span>
           <span><Bi en="ICF Member Coach" es="Coach Miembro de ICF" /></span>
