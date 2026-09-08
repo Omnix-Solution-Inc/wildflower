@@ -63,7 +63,7 @@ export function Weddings() {
             <Bi en="Real Clients" es="Clientes Reales" />
           </p>
           <div className="grid grid-cols-3 gap-4 md:gap-5">
-            <img src="/gallery/wedding_reception_couple.jpg" alt="Real wedding reception with rose bouquet" className="w-full aspect-[3/5] object-cover rounded-lg" />
+            <img src="/gallery/wedding_ring_ceremony.jpg" alt="Real wedding ring exchange ceremony" className="w-full aspect-[3/5] object-cover rounded-lg" />
             <img src="/gallery/wedding_beach_arch_yellow.jpg" alt="Couple kissing under a yellow floral beach arch" className="w-full aspect-[3/5] object-cover rounded-lg" />
             <img src="/gallery/wedding_cake_kiss.jpg" alt="Newlyweds kissing while cutting the wedding cake" className="w-full aspect-[3/5] object-cover rounded-lg" />
           </div>
