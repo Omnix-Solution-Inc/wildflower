@@ -60,7 +60,7 @@ export function Weddings() {
 
         <div className="mt-16 max-w-4xl mx-auto text-center">
           <p className="text-[0.65rem] tracking-[0.35em] uppercase text-terracotta mb-8">
-            <Bi en="Real Celebrations" es="Celebraciones Reales" />
+            <Bi en="Real Clients" es="Clientes Reales" />
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
             <img src="/gallery/wedding_reception_couple.jpg" alt="Real wedding reception with rose bouquet" className="w-full aspect-[3/5] object-cover" />
