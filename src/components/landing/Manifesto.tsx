@@ -23,7 +23,8 @@ export function Manifesto() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/founder.jpg" alt="Mariela Barbetti" className="w-full h-full object-cover" />
           </div>
-          <span className="font-cinzel text-sm tracking-[0.2em] text-moss">Mariela Barbetti</span>
+          <span className="font-script text-[clamp(1.8rem,3vw,2.6rem)] text-black leading-tight">Mariela Barbetti</span>
+          <span className="text-[0.6rem] tracking-[0.3em] uppercase text-moss">Fundadora</span>
         </div>
       </div>
     </section>

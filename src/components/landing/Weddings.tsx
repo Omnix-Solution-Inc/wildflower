@@ -48,10 +48,6 @@ export function Weddings() {
       </div>
 
         <div className="mt-24 pt-20 border-t border-sand/15 max-w-3xl mx-auto text-center">
-          <p className="font-script text-[clamp(1.6rem,3vw,2.4rem)] text-linen mb-10">
-            <Bi en="Caring for your floral budget with tenderness." es="Cuidando tu presupuesto floral con mimo." />
-          </p>
-
           <a
             href="#contact"
             className="inline-block px-10 py-4 bg-terracotta text-linen text-[0.65rem] tracking-[0.22em] uppercase font-semibold hover:bg-linen hover:text-moss transition cursor-pointer mb-4"
