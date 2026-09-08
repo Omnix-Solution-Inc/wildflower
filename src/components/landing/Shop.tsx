@@ -24,7 +24,7 @@ const products = [
     inquire: true,
   },
   {
-    img: '/gallery/10_flower_crown.jpg',
+    img: '/gallery/wedding_centerpiece_happy_marriage.jpg',
     name: { en: 'Seasonal Wreath', es: 'Corona Estacional' },
     desc: {
       en: 'A seasonal wreath that brings organic warmth to your door or space, crafted with intentional design.',
