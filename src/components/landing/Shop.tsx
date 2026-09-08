@@ -25,7 +25,7 @@ const products = [
   },
   {
     img: '/gallery/wedding_candles_orchids.jpg',
-    name: { en: 'Personalized Accessories', es: 'Personalización de Accesorios' },
+    name: { en: 'Accessories', es: 'Accesorios' },
     desc: {
       en: 'Candles, vases, and accents adorned with fresh flowers — personalized details that transform any space.',
       es: 'Velas, jarrones y acentos adornados con flores frescas — detalles personalizados que transforman cualquier espacio.',
