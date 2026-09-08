@@ -13,7 +13,6 @@ const products = [
       en: 'A seasonal, hand-crafted bouquet designed to bring the wild beauty of nature into your home or event.',
       es: 'Un ramo artesanal de temporada diseñado para llevar la belleza silvestre de la naturaleza a tu hogar o evento.',
     },
-    price: { en: '$65 / bouquet', es: '$65 / ramo' },
   },
   {
     img: '/gallery/05_tablescape_candles.jpg',
@@ -23,7 +22,6 @@ const products = [
       en: 'Elevated table centerpiece perfect for dinners, celebrations, or as a statement piece for any space.',
       es: 'Centro de mesa elevado, perfecto para cenas, celebraciones o como pieza principal de cualquier espacio.',
     },
-    price: { en: '$120 / piece', es: '$120 / pieza' },
   },
   {
     img: '/gallery/02_garden_white_vase.jpg',
@@ -32,7 +30,6 @@ const products = [
       en: 'A thoughtfully designed arrangement for gifting — birthdays, anniversaries, or simply to say “I see you.”',
       es: 'Un arreglo diseñado para regalar — cumpleaños, aniversarios o simplemente para decir “te veo”.',
     },
-    price: { en: '$85 / arrangement', es: '$85 / arreglo' },
   },
   {
     img: '/gallery/03_bridal_bouquet_lavender.jpg',
@@ -41,7 +38,6 @@ const products = [
       en: 'Handcrafted bridal bouquets designed to reflect your unique story and the beauty of your celebration.',
       es: 'Ramos de novia artesanales diseñados para reflejar tu historia única y la belleza de tu celebración.',
     },
-    price: { en: 'From $180', es: 'Desde $180' },
     inquire: true,
   },
   {
@@ -51,7 +47,6 @@ const products = [
       en: 'A seasonal wreath that brings organic warmth to your door or space, crafted with intentional design.',
       es: 'Una corona estacional que lleva calidez orgánica a tu puerta o espacio, creada con diseño intencional.',
     },
-    price: { en: 'From $75', es: 'Desde $75' },
     inquire: true,
   },
 ]
@@ -92,8 +87,7 @@ export function Shop() {
               <div className="p-6">
                 <h3 className="font-cinzel text-base text-moss mb-2"><Bi en={p.name.en} es={p.name.es} /></h3>
                 <p className="text-[0.75rem] leading-[1.8] text-charcoal/60 mb-4"><Bi en={p.desc.en} es={p.desc.es} /></p>
-                <div className="flex items-center justify-between">
-                  <span className="text-[0.8rem] font-semibold text-terracotta"><Bi en={p.price.en} es={p.price.es} /></span>
+                <div className="flex items-center justify-end">
                   <a
                     href={`${WA}${encodeURIComponent(`Hi! I'd like to order: ${p.name.en}`)}`}
                     target="_blank" rel="noopener noreferrer"
