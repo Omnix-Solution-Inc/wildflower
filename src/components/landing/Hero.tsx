@@ -61,7 +61,6 @@ export function Hero() {
           <span><Bi en="Monroe County · Ontario County" es="Condado de Monroe · Condado de Ontario" /></span>
           <span><Bi en="Custom Arrangements · Events" es="Arreglos a Medida · Eventos" /></span>
           <span><Bi en="Wildflower Experience" es="Experiencia Wildflower" /></span>
-          <span><Bi en="ICF Member Coach" es="Coach Miembro de ICF" /></span>
         </div>
       </div>
     </section>
