@@ -6,7 +6,7 @@ const WA = 'https://wa.me/13217329993?text='
 
 const products = [
   {
-    img: '/gallery/07_bridal_garden_natural.jpg',
+    img: '/gallery/07_wildflower_bouquet_real.jpg',
     badge: { en: 'Available', es: 'Disponible' },
     name: { en: 'Wildflower Bouquet', es: 'Ramo Silvestre' },
     desc: {
@@ -32,7 +32,7 @@ const products = [
     },
   },
   {
-    img: '/gallery/03_bridal_bouquet_lavender.jpg',
+    img: '/gallery/03_bridal_bouquet_roses_real.jpg',
     name: { en: 'Bridal Bouquet', es: 'Ramo de Novia' },
     desc: {
       en: 'Handcrafted bridal bouquets designed to reflect your unique story and the beauty of your celebration.',
