@@ -6,15 +6,6 @@ const WA = 'https://wa.me/13217329993?text='
 
 const products = [
   {
-    img: '/gallery/07_wildflower_bouquet_real.jpg',
-    badge: { en: 'Available', es: 'Disponible' },
-    name: { en: 'Wildflower Bouquet', es: 'Ramo Silvestre' },
-    desc: {
-      en: 'A seasonal, hand-crafted bouquet designed to bring the wild beauty of nature into your home or event.',
-      es: 'Un ramo artesanal de temporada diseñado para llevar la belleza silvestre de la naturaleza a tu hogar o evento.',
-    },
-  },
-  {
     img: '/gallery/05_tablescape_candles.jpg',
     badge: { en: 'Best Seller', es: 'Más Vendido' },
     name: { en: 'Centerpiece — Table Design', es: 'Centro de Mesa' },
