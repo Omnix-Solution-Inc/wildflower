@@ -15,7 +15,7 @@ export function Events() {
         </p>
 
         <h2 className="font-script text-[clamp(2.2rem,5vw,3.8rem)] text-moss leading-snug mb-10">
-          <Bi en="Your one place for it all." es="Un solo lugar para todo." />
+          <Bi en="One place for it all." es="Un solo lugar para todo." />
         </h2>
 
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-12">

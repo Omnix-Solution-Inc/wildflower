@@ -18,7 +18,7 @@ const products = [
     img: '/gallery/wedding_bridal_bouquet_new.jpg',
     name: { en: 'Bridal Bouquet', es: 'Ramo de Novia' },
     desc: {
-      en: 'Handcrafted bridal bouquets designed to reflect your unique story and the beauty of your celebration.',
+      en: 'A handcrafted bridal bouquet designed to reflect your unique story and the beauty of your celebration.',
       es: 'Ramo de novia artesanal diseñado para reflejar tu historia única y la belleza de tu celebración.',
     },
     inquire: true,

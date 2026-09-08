@@ -50,14 +50,14 @@ export function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <span className="text-[0.55rem] tracking-[0.25em] uppercase text-sand/50"><Bi en="Scroll" es="Bajar" /></span>
+        <span className="text-[0.55rem] tracking-[0.25em] uppercase text-sand/50"><Bi en="Discover More" es="Descubre Más" /></span>
         <span className="w-px h-8 bg-sand/30"></span>
       </div>
 
       {/* Badges */}
       <div className="absolute bottom-0 left-0 right-0 border-t border-sand/10 bg-moss/40 backdrop-blur-sm py-4 hidden md:block">
         <div className="flex justify-center gap-10 text-[0.6rem] tracking-[0.22em] uppercase text-sand/70 flex-wrap px-6">
-          <span><Bi en="Local Florist · Wayne County NY" es="Floristería Local · Condado de Wayne NY" /></span>
+          <span><Bi en="Local Florist · Wayne County, NY" es="Floristería Local · Condado de Wayne, NY" /></span>
           <span><Bi en="Monroe County · Ontario County" es="Condado de Monroe · Condado de Ontario" /></span>
           <span><Bi en="Custom Arrangements · Events" es="Arreglos a Medida · Eventos" /></span>
         </div>

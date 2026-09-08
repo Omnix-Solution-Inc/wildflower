@@ -8,14 +8,14 @@ const FLOWERS = [
     es_style: 'Clásico, elegante, silvestre o relleno delicado.',
     en_style: 'Classic, elegant, wild or delicate filler.',
     es_desc: 'Las grandes favoritas. Las rosas estándar aportan un aspecto atemporal, mientras que las rosas de jardín logran un estilo más silvestre y las rosas spray funcionan como un relleno caprichoso y romántico.',
-    en_desc: 'The great favorites. Standard roses bring a timeless look, garden roses achieve a wilder feel, and spray roses work as a whimsical, romantic filler.'
+    en_desc: 'The crowd favorites. Standard roses bring a timeless look, garden roses achieve a wilder feel, and spray roses work as a whimsical, romantic filler.'
   },
   {
     es_name: 'Ranúnculos', img: '/gallery/flowers/ranunculus.png', en_name: 'Ranunculus',
     es_style: 'Movimiento, textura y color vibrante.',
     en_style: 'Movement, texture and vibrant color.',
     es_desc: 'Disponibles en una enorme variedad de tonalidades, son la flor de acento perfecta: sus pétalos redondos y tallos ondulados le dan vida y dinamismo a tu ramo.',
-    en_desc: 'Available in a huge range of shades, their round petals and curvy stems are the perfect accent flower to bring life and movement to your bouquet.'
+    en_desc: 'Available in a huge range of shades, they are the perfect accent flower: their round petals and curvy stems bring life and movement to your bouquet.'
   },
   {
     es_name: 'Peonías', img: '/gallery/flowers/peony.png', en_name: 'Peonies',
@@ -50,7 +50,7 @@ const FLOWERS = [
     es_style: 'Versatilidad exótica y silueta abierta.',
     en_style: 'Exotic versatility and open silhouette.',
     es_desc: 'Con una enorme variedad de tipos (de flecos, dobles o tipo loro), se pueden transformar suavemente para abrirse y mostrar una apariencia completamente exótica y artística.',
-    en_desc: 'In a huge variety of types (fringed, double or parrot), they can be gently coaxed open to reveal a completely exotic, artistic look.'
+    en_desc: 'With a wide variety of types (fringed, double, or parrot), they can be gently coaxed open to reveal a completely exotic, artistic look.'
   },
   {
     es_name: 'Hortensias', img: '/gallery/flowers/hydrangea.png', en_name: 'Hydrangeas',
