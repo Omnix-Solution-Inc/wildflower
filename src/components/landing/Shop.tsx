@@ -55,20 +55,16 @@ export function Shop() {
   return (
     <section id="shop" className="py-24 px-[6%] bg-off-white">
       <div className="max-w-6xl mx-auto">
-        <p className="text-center text-[0.6rem] tracking-[0.35em] uppercase text-sage mb-4">
-          <Bi en="— Shop · Local Delivery" es="— Tienda · Entrega Local" />
-        </p>
-        <h2 className="text-center font-cinzel text-[clamp(1.8rem,4vw,3rem)] text-moss mb-5">
-          <Bi en="Ready to bloom today." es="Listas para florecer hoy." />
-        </h2>
-        <p className="text-center text-[0.85rem] leading-[1.9] text-charcoal/70 max-w-xl mx-auto mb-14">
-          <Bi
-            en="Finished arrangements available for pickup or local delivery in Wayne County, Monroe County, and Ontario County, NY. Each piece is designed with intention — crafted to bring beauty into your space."
-            es="Arreglos terminados disponibles para recoger o entrega local en los condados de Wayne, Monroe y Ontario, NY. Cada pieza está diseñada con intención — creada para llevar belleza a tu espacio."
-          />
-        </p>
+        <div className="flex justify-center mb-14">
+          <a
+            href="#alacarte-products"
+            className="inline-block px-10 py-4 bg-moss text-sand text-[0.7rem] tracking-[0.22em] uppercase font-semibold hover:bg-terracotta transition cursor-pointer"
+          >
+            À La Carte Store
+          </a>
+        </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div id="alacarte-products" className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((p, i) => (
             <div key={i} className="group bg-white shadow-sm hover:shadow-lg transition-shadow duration-300">
               <div className="relative overflow-hidden aspect-[4/5] bg-sand-dark">
