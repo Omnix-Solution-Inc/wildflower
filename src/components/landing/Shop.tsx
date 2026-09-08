@@ -25,10 +25,10 @@ const products = [
   },
   {
     img: '/gallery/wedding_candles_orchids.jpg',
-    name: { en: 'Seasonal Wreath', es: 'Corona Estacional' },
+    name: { en: 'Personalized Accessories', es: 'Personalización de Accesorios' },
     desc: {
-      en: 'A seasonal wreath that brings organic warmth to your door or space, crafted with intentional design.',
-      es: 'Una corona estacional que lleva calidez orgánica a tu puerta o espacio, creada con diseño intencional.',
+      en: 'Candles, vases, and accents adorned with fresh flowers — personalized details that transform any space.',
+      es: 'Velas, jarrones y acentos adornados con flores frescas — detalles personalizados que transforman cualquier espacio.',
     },
     inquire: true,
   },
