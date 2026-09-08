@@ -25,7 +25,6 @@ export function Footer() {
             <div className="flex flex-col gap-3">
               <a href="#shop" className="text-sand/70 text-sm hover:text-sand transition"><Bi en="Shop" es="Tienda" /></a>
               <a href="#services" className="text-sand/70 text-sm hover:text-sand transition"><Bi en="Our Work" es="Nuestro Trabajo" /></a>
-              <a href="#legacy" className="text-sand/70 text-sm hover:text-sand transition"><Bi en="Legacy" es="Legado" /></a>
               <a href="#contact" className="text-sand/70 text-sm hover:text-sand transition"><Bi en="Book Now" es="Reservar" /></a>
             </div>
           </div>
