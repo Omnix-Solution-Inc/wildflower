@@ -17,13 +17,6 @@ export function Manifesto() {
           />
         </blockquote>
 
-        <p className="text-[0.7rem] tracking-[0.22em] uppercase text-terracotta mb-12">
-          <Bi
-            en="Awakening souls through flowers. A local florist with a global soul — rooted in Wayne County, NY, blooming across Monroe and Ontario Counties."
-            es="Despertando almas a través de las flores. Una floristería local con alma global — arraigada en el condado de Wayne, NY, floreciendo en los condados de Monroe y Ontario."
-          />
-        </p>
-
         {/* Founder */}
         <div className="flex flex-col items-center gap-4">
           <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-linen shadow-md">
