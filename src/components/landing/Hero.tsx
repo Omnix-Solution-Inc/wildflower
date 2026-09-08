@@ -31,8 +31,8 @@ export function Hero() {
 
         <p className="text-[0.85rem] tracking-[0.06em] leading-[1.9] text-sand/90 max-w-[560px] mx-auto mb-10">
           <Bi
-            en="A boutique floral studio serving Wayne County, Monroe County, and Ontario County, NY with intentional, soul-driven floral design — for events, weddings, and everyday moments."
-            es="Un estudio floral boutique que sirve a los condados de Wayne, Monroe y Ontario, NY con diseño floral intencional y con alma — para eventos, bodas y momentos cotidianos."
+            en="A floral studio serving Wayne County, Monroe County, and Ontario County, NY with floral designs adapted to your taste and budget."
+            es="Estudio floral que sirve a los condados de Wayne, Monroe y Ontario, NY con diseños florales adaptados a tus gustos y a presupuesto."
           />
         </p>
 
