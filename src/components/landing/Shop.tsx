@@ -15,14 +15,6 @@ const products = [
     },
   },
   {
-    img: '/gallery/02_garden_white_vase.jpg',
-    name: { en: 'Gift Arrangement', es: 'Arreglo de Regalo' },
-    desc: {
-      en: 'A thoughtfully designed arrangement for gifting — birthdays, anniversaries, or simply to say “I see you.”',
-      es: 'Un arreglo diseñado para regalar — cumpleaños, aniversarios o simplemente para decir “te veo”.',
-    },
-  },
-  {
     img: '/gallery/wedding_bridal_bouquet_new.jpg',
     name: { en: 'Bridal Bouquet', es: 'Ramo de Novia' },
     desc: {
