@@ -22,17 +22,7 @@ export function Services() {
         </p>
 
         {/* 01 — Events & Installations */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-          <div className="grid grid-cols-2 gap-4">
-            <div className="overflow-hidden shadow-md">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/gallery/06_arch_white_green.jpg" alt="Event detail" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-700" />
-            </div>
-            <div className="overflow-hidden shadow-md mt-8">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/gallery/08_arch_full_pink.jpg" alt="Full installation" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-700" />
-            </div>
-          </div>
+        <div className="max-w-2xl mx-auto text-center mb-20">
           <div>
             <p className="text-[0.6rem] tracking-[0.3em] uppercase text-terracotta mb-3">
               <Bi en="01 — Events & Installations" es="01 — Eventos e Instalaciones" />
