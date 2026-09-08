@@ -7,14 +7,14 @@ const FLOWERS = [
     es_name: 'Rosas', img: '/gallery/flowers/rose.png', en_name: 'Roses',
     es_style: 'Clásico, elegante, silvestre o relleno delicado.',
     en_style: 'Classic, elegant, wild or delicate filler.',
-    es_desc: 'Las grandes favoritas. Las estándar aportan un aspecto atemporal, mientras que las rosas de jardín logran un look más silvestre y las rosas en aerosol funcionan como un relleno caprichoso y romántico.',
+    es_desc: 'Las grandes favoritas. Las rosas estándar aportan un aspecto atemporal, mientras que las rosas de jardín logran un estilo más silvestre y las rosas spray funcionan como un relleno caprichoso y romántico.',
     en_desc: 'The great favorites. Standard roses bring a timeless look, garden roses achieve a wilder feel, and spray roses work as a whimsical, romantic filler.'
   },
   {
     es_name: 'Ranúnculos', img: '/gallery/flowers/ranunculus.png', en_name: 'Ranunculus',
     es_style: 'Movimiento, textura y color vibrante.',
     en_style: 'Movement, texture and vibrant color.',
-    es_desc: 'Disponibles en una enorme variedad de tonalidades, sus pétalos redondos y tallos ondulados son la flor de acento perfecta para darle vida y dinamismo a tu ramo.',
+    es_desc: 'Disponibles en una enorme variedad de tonalidades, son la flor de acento perfecta: sus pétalos redondos y tallos ondulados le dan vida y dinamismo a tu ramo.',
     en_desc: 'Available in a huge range of shades, their round petals and curvy stems are the perfect accent flower to bring life and movement to your bouquet.'
   },
   {
@@ -26,10 +26,10 @@ const FLOWERS = [
   },
   {
     es_name: 'Anémonas', img: '/gallery/flowers/anemone.png', en_name: 'Anemones',
-    es_style: 'Audaz, moderno y con textura delicada.',
+    es_style: 'Audaz, moderna y con textura delicada.',
     en_style: 'Bold, modern, delicately textured.',
     es_desc: 'Aportan un contraste único gracias a sus centros oscuros e intensos. Las clásicas en blanco con centro azul marino son ideales para bodas sofisticadas.',
-    en_desc: 'They provide unique contrast thanks to their dark, intense centers. The classic white with navy-blue centers are ideal for sophisticated weddings.'
+    en_desc: 'They provide unique contrast thanks to their dark, intense centers. The classic white ones with navy-blue centers are ideal for sophisticated weddings.'
   },
   {
     es_name: 'Bocas de Dragón', img: '/gallery/flowers/snapdragon.png', en_name: 'Snapdragons',
@@ -49,12 +49,12 @@ const FLOWERS = [
     es_name: 'Tulipanes', img: '/gallery/flowers/tulip.png', en_name: 'Tulips',
     es_style: 'Versatilidad exótica y silueta abierta.',
     en_style: 'Exotic versatility and open silhouette.',
-    es_desc: 'Con una enorme variedad de tipos (flecos, dobles o loro), se pueden transformar suavemente para abrirse y mostrar una apariencia completamente exótica y artística.',
+    es_desc: 'Con una enorme variedad de tipos (de flecos, dobles o tipo loro), se pueden transformar suavemente para abrirse y mostrar una apariencia completamente exótica y artística.',
     en_desc: 'In a huge variety of types (fringed, double or parrot), they can be gently coaxed open to reveal a completely exotic, artistic look.'
   },
   {
     es_name: 'Hortensias', img: '/gallery/flowers/hydrangea.png', en_name: 'Hydrangeas',
-    es_style: 'Volumen suave, tonos pastel y polvorientos.',
+    es_style: 'Volumen suave, tonos pastel y empolvados.',
     en_style: 'Soft volume, pastel and dusty tones.',
     es_desc: 'Sus grandes y llamativos pompones florales son indispensables para decorar arcos ceremoniales y centros de mesa de gran impacto visual.',
     en_desc: 'Their large, eye-catching blooms are essential for ceremonial arches and high-impact centerpieces.'
@@ -63,7 +63,7 @@ const FLOWERS = [
     es_name: 'Dalias', img: '/gallery/flowers/dahlia.png', en_name: 'Dahlias',
     es_style: 'Presencia imponente y elegancia duradera.',
     en_style: 'Imposing presence and lasting elegance.',
-    es_desc: 'Especialmente las variedades tipo plato de cena, que destacan por su tamaño generoso y su capacidad de transformar cualquier espacio con elegancia.',
+    es_desc: 'Especialmente las variedades tipo plato, que destacan por su tamaño generoso y su capacidad de transformar cualquier espacio con elegancia.',
     en_desc: 'Especially the dinner-plate varieties, which stand out for their generous size and their ability to transform any space with elegance.'
   },
   {

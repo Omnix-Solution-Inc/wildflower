@@ -6,7 +6,7 @@ import { Bi, useLang } from '@/components/shared/Language'
 const WA = 'https://wa.me/13217329993?text='
 
 const interests = [
-  { en: 'Finished Arrangement — Pickup / Delivery', es: 'Arreglo Terminado — Recoger / Entrega' },
+  { en: 'Finished Arrangement — Pickup / Delivery', es: 'Arreglo Terminado — Recogida / Entrega' },
   { en: 'Custom Arrangement', es: 'Arreglo Personalizado' },
   { en: 'Wedding / Bridal Florals', es: 'Flores de Boda / Novia' },
   { en: 'Event — Vineyard / Gala / Corporate', es: 'Evento — Viñedo / Gala / Corporativo' },
@@ -43,7 +43,7 @@ export function Contact() {
         <p className="text-[0.85rem] leading-[1.9] text-charcoal/70 max-w-xl mx-auto mb-10">
           <Bi
             en="Whether you're looking for a finished arrangement for your home, planning a monumental event, or seeking a transformative experience — every great creation begins with a conversation."
-            es="Ya sea que busques un arreglo terminado para tu hogar, planifiques un evento monumental, o busques una experiencia transformadora — toda gran creación comienza con una conversación."
+            es="Ya sea que busques un arreglo terminado para tu hogar, planifiques un evento monumental o anheles una experiencia transformadora — toda gran creación comienza con una conversación."
           />
         </p>
 

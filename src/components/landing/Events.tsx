@@ -28,7 +28,7 @@ export function Events() {
           </span>
           <span className="w-px h-5 bg-terracotta/40 hidden md:inline-block"></span>
           <span className="font-cinzel text-sm tracking-[0.18em] text-moss">
-            Baby Showers
+            Baby Shower
           </span>
           <span className="w-px h-5 bg-terracotta/40 hidden md:inline-block"></span>
           <span className="font-cinzel text-sm tracking-[0.18em] text-moss">

@@ -33,7 +33,7 @@ export function Services() {
             <p className="text-[0.85rem] leading-[2] text-charcoal/70 mb-7">
               <Bi
                 en="Luxury floral installations for vineyard weddings, barn galas, editorial shoots, and corporate events across Wayne County, Monroe County, and Ontario County. Every design is a living sculpture — intentional, seasonal, and breathtakingly singular."
-                es="Instalaciones florales de lujo para bodas en viñedos, galas en graneros, sesiones editoriales y eventos corporativos en los condados de Wayne, Monroe y Ontario. Cada diseño es una escultura viva — intencional, estacional y singular."
+                es="Instalaciones florales de lujo para bodas en viñedos, galas campestres, sesiones editoriales y eventos corporativos en los condados de Wayne, Monroe y Ontario. Cada diseño es una escultura viva — intencional, estacional y singular."
               />
             </p>
             <a href={`${WA}${encodeURIComponent("Hi! I'd like to inquire about floral production for an event.")}`}

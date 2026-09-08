@@ -14,7 +14,7 @@ export function Footer() {
             <p className="text-sand/60 text-sm leading-relaxed mb-4">
               <Bi
                 en="A floral studio serving Wayne, Monroe, and Ontario Counties, NY with floral designs adapted to your taste and budget."
-                es="Estudio floral que sirve a los condados de Wayne, Monroe y Ontario, NY con diseños florales adaptados a tus gustos y presupuesto."
+                es="Estudio floral que sirve a los condados de Wayne, Monroe y Ontario, NY, con diseños florales adaptados a tus gustos y presupuesto."
               />
             </p>
             <p className="text-sand/40 text-xs">Wayne County · Monroe County · Ontario County, NY</p>
