@@ -9,11 +9,13 @@ import { Services } from '@/components/landing/Services'
 import { Contact } from '@/components/landing/Contact'
 import { Footer } from '@/components/layout/Footer'
 import { LangProvider } from '@/components/shared/Language'
+import { WhatsAppFloat } from '@/components/shared/WhatsAppFloat'
 
 export default function Home() {
   return (
     <LangProvider>
       <Navbar />
+      <WhatsAppFloat />
       <Hero />
       <Events />
       <Weddings />

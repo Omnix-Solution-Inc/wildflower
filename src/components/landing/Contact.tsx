@@ -28,6 +28,19 @@ export function Contact() {
     const msg = lang === 'en'
       ? `Hi! I'm ${form.firstName} ${form.lastName}.\nEmail: ${form.email}\nI'm looking for: ${interestEn}\nMy vision: ${form.vision}`
       : `¡Hola! Soy ${form.firstName} ${form.lastName}.\nEmail: ${form.email}\nBusco: ${interestEs}\nMi visión: ${form.vision}`
+    // Enviar la consulta por correo (notificación al estudio)
+    fetch('https://witmakers-1a5946c3.base44.app/functions/sendBellaInquiry', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        firstName: form.firstName,
+        lastName: form.lastName,
+        email: form.email,
+        interest: form.interest,
+        vision: form.vision,
+        lang,
+      }),
+    }).catch(() => {})
     window.open(`${WA}${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer')
   }
 
@@ -98,6 +111,17 @@ export function Contact() {
             <Bi en="Send My Vision →" es="Enviar Mi Visión →" />
           </button>
         </form>
+
+        <div className="mt-8">
+          <a
+            href="https://wa.me/13217329993"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border border-terracotta/50 text-terracotta text-[0.65rem] tracking-[0.22em] uppercase font-semibold px-9 py-4 hover:bg-terracotta hover:text-linen transition"
+          >
+            <Bi en="WhatsApp: +1 (321) 732-9993" es="WhatsApp: +1 (321) 732-9993" />
+          </a>
+        </div>
 
         <p className="mt-8 text-[0.6rem] tracking-[0.25em] uppercase text-charcoal/50">
           <Bi en="📍 Wayne County · Monroe County · Ontario County, NY" es="📍 Condado de Wayne · Condado de Monroe · Condado de Ontario, NY" />
