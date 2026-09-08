@@ -52,20 +52,6 @@ export function Weddings() {
             <Bi en="Caring for your floral budget with tenderness." es="Cuidando tu presupuesto floral con mimo." />
           </p>
 
-          <p className="text-[0.85rem] leading-[1.9] text-sand/85 mb-6">
-            <Bi
-              en="Your budget is part of the plan from day one. Season, guest count, and flower choice affect the total — but I always find a way to make your vision real. Smart substitutions keep the look you love at a fraction of the cost, and mixing tall, lush centerpieces with smaller, delicate ones creates a sophisticated tablescape while maximizing your budget."
-              es="Tu presupuesto es parte del plan desde el primer día. La época del año, el número de invitados y el tipo de flor afectan el total — pero siempre encuentro la manera de hacer real tu visión. Las sustituciones inteligentes mantienen el estilo que amas a una fracción del costo, y combinar centros de mesa altos y frondosos con otros más pequeños y delicados crea un paisaje de mesa sofisticado mientras maximiza tu presupuesto."
-            />
-          </p>
-
-          <p className="text-[0.85rem] leading-[1.9] text-sand/85 mb-8">
-            <Bi
-              en="You don't need to know your exact style or have every detail planned to book a meeting. Trust the professionals and let me be your ally from day one."
-              es="No necesitas tener el estilo exacto definido ni cada detalle planeado para agendar una reunión. Confía en los profesionales y déjame ser tu aliada desde el primer día."
-            />
-          </p>
-
           <a
             href="#contact"
             className="inline-block px-10 py-4 bg-terracotta text-linen text-[0.65rem] tracking-[0.22em] uppercase font-semibold hover:bg-linen hover:text-moss transition cursor-pointer mb-4"
