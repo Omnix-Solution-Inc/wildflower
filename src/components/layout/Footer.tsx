@@ -13,8 +13,8 @@ export function Footer() {
             <h3 className="font-cinzel text-lg text-sand mb-4 tracking-wider">THE BELLA WILDFLOWER</h3>
             <p className="text-sand/60 text-sm leading-relaxed mb-4">
               <Bi
-                en="Choose to Bloom Untamed. A boutique floral studio serving Wayne, Monroe, and Ontario Counties, NY with intentional, soul-driven floral design."
-                es="Elige Florecer sin Ataduras. Un estudio floral boutique que sirve a los condados de Wayne, Monroe y Ontario, NY con diseño floral intencional y con alma."
+                en="A boutique floral studio serving Wayne, Monroe, and Ontario Counties, NY with intentional, soul-driven floral design."
+                es="Un estudio floral boutique que sirve a los condados de Wayne, Monroe y Ontario, NY con diseño floral intencional y con alma."
               />
             </p>
             <p className="text-sand/40 text-xs">Wayne County · Monroe County · Ontario County, NY</p>
@@ -42,7 +42,7 @@ export function Footer() {
 
         <div className="border-t border-sand/10 pt-8 text-center">
           <p className="text-sand/40 text-xs tracking-wider">
-            <Bi en="© 2026 The Bella Wildflower · Choose to Bloom Untamed · Founded by Mariela Barbetti" es="© 2026 The Bella Wildflower · Elige Florecer sin Ataduras · Fundado por Mariela Barbetti" />
+            <Bi en="© 2026 The Bella Wildflower · Founded by Mariela Barbetti" es="© 2026 The Bella Wildflower · Fundado por Mariela Barbetti" />
           </p>
         </div>
       </div>

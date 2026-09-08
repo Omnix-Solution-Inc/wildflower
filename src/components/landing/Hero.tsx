@@ -29,10 +29,6 @@ export function Hero() {
           The Bella Wildflower
         </h1>
 
-        <p className="font-script text-[clamp(1.6rem,3.5vw,3rem)] text-linen mb-8">
-          <Bi en="Choose to Bloom Untamed." es="Elige Florecer sin Ataduras." />
-        </p>
-
         <p className="text-[0.85rem] tracking-[0.06em] leading-[1.9] text-sand/90 max-w-[560px] mx-auto mb-10">
           <Bi
             en="A boutique floral studio serving Wayne County, Monroe County, and Ontario County, NY with intentional, soul-driven floral design — for events, weddings, and everyday moments."
