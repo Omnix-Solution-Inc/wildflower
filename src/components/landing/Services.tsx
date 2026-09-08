@@ -54,39 +54,6 @@ export function Services() {
           </div>
         </div>
 
-        {/* 02 — The Wildflower Experience */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="lg:order-2 grid grid-cols-2 gap-4">
-            <div className="overflow-hidden shadow-md">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/flores_taller.png" alt="Workshop moment" className="w-full h-64 object-cover bg-sand-dark hover:scale-105 transition-transform duration-700" />
-            </div>
-            <div className="overflow-hidden shadow-md mt-8">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/gallery/09_garland_runner.jpg" alt="Group experience" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-700" />
-            </div>
-          </div>
-          <div className="lg:order-1">
-            <p className="text-[0.6rem] tracking-[0.3em] uppercase text-terracotta mb-3">
-              <Bi en="02 — The Wildflower Experience" es="02 — La Experiencia Wildflower" />
-            </p>
-            <h3 className="font-cinzel text-[clamp(1.3rem,2.5vw,2rem)] text-moss leading-snug mb-5">
-              <Bi en="Coaching & Wellness Through Flowers" es="Coaching y Bienestar a Través de las Flores" />
-            </h3>
-            <p className="text-[0.85rem] leading-[2] text-charcoal/70 mb-7">
-              <Bi
-                en="Immersive workshops and coaching sessions where flowers become tools of transformation. For individuals seeking growth, and companies across Wayne, Monroe, and Ontario Counties looking for meaningful team experiences."
-                es="Talleres inmersivos y sesiones de coaching donde las flores se convierten en herramientas de transformación. Para personas en proceso de crecimiento, y empresas en los condados de Wayne, Monroe y Ontario que buscan experiencias de equipo con significado."
-              />
-            </p>
-            <a href={`${WA}${encodeURIComponent('Hi! I\'d like to book a Wildflower Experience (coaching & flowers workshop).')}`}
-               target="_blank" rel="noopener noreferrer"
-               className="inline-block text-[0.65rem] tracking-[0.2em] uppercase font-semibold text-moss border-b-2 border-terracotta pb-1 hover:text-terracotta transition">
-              <Bi en="Book an Experience →" es="Reservar una Experiencia →" />
-            </a>
-          </div>
-        </div>
-
         {/* Local strip */}
         <div className="mt-20 text-center border-t border-moss/10 pt-10">
           <p className="text-[0.6rem] tracking-[0.3em] uppercase text-sage">
