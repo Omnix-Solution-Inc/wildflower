@@ -10,7 +10,6 @@ const interests = [
   { en: 'Custom Arrangement', es: 'Arreglo Personalizado' },
   { en: 'Wedding / Bridal Florals', es: 'Flores de Boda / Novia' },
   { en: 'Event — Vineyard / Gala / Corporate', es: 'Evento — Viñedo / Gala / Corporativo' },
-  { en: 'Wildflower Experience — Coaching', es: 'Experiencia Wildflower — Coaching' },
 ]
 
 export function Contact() {

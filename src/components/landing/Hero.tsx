@@ -60,7 +60,6 @@ export function Hero() {
           <span><Bi en="Local Florist · Wayne County NY" es="Floristería Local · Condado de Wayne NY" /></span>
           <span><Bi en="Monroe County · Ontario County" es="Condado de Monroe · Condado de Ontario" /></span>
           <span><Bi en="Custom Arrangements · Events" es="Arreglos a Medida · Eventos" /></span>
-          <span><Bi en="Wildflower Experience" es="Experiencia Wildflower" /></span>
         </div>
       </div>
     </section>
