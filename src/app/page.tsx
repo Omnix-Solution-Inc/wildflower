@@ -6,6 +6,7 @@ import { Weddings } from '@/components/landing/Weddings'
 import { Collection } from '@/components/landing/Collection'
 import { Shop } from '@/components/landing/Shop'
 import { Services } from '@/components/landing/Services'
+import { EventPlanner } from '@/components/landing/EventPlanner'
 import { Contact } from '@/components/landing/Contact'
 import { Footer } from '@/components/layout/Footer'
 import { LangProvider } from '@/components/shared/Language'
@@ -21,6 +22,7 @@ export default function Home() {
       <Manifesto />
       <Shop />
       <Services />
+      <EventPlanner />
       <Contact />
       <Footer />
     </LangProvider>
