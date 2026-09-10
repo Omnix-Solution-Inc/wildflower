@@ -77,7 +77,6 @@ export default function PlannerClient({ lang, setLang }: { lang: Lang; setLang: 
   const [codeWrong, setCodeWrong] = useState(false)
   const [busy, setBusy] = useState(false)
   const [msg, setMsg] = useState('')
-  const [smsNote, setSmsNote] = useState('')
   const [generating, setGenerating] = useState(false)
 
   useEffect(() => {
@@ -96,7 +95,6 @@ export default function PlannerClient({ lang, setLang }: { lang: Lang; setLang: 
 
   const tr = (k: string) => t(k, lang)
 
-  const activated = s.phoneVerified && s.transactionId.trim().length >= 6
 
   /* ── phone verification ── */
   const sendCode = async () => {
@@ -130,27 +128,6 @@ export default function PlannerClient({ lang, setLang }: { lang: Lang; setLang: 
       if (data.ok) { set('phoneVerified', true); setCodeWrong(false) }
       else setCodeWrong(true)
     } catch { setCodeWrong(true) }
-    setBusy(false)
-  }
-
-  /* ── payment activation ── */
-  const activate = async () => {
-    if (s.transactionId.trim().length < 6) { setMsg(tr('txnRequired')); return }
-    setMsg(''); setBusy(true)
-    try {
-      const res = await fetch(`${API}/sendWeddingSms`, {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: 'confirmPurchase', phone: s.phone, name: s.name, transactionId: s.transactionId }),
-      })
-      const data = await res.json()
-      if (data.sent) setSmsNote(tr('smsConfirmSent'))
-      else setSmsNote(tr('smsConfirmDemo'))
-      void fetch(`${API}/saveWeddingPlanner`, {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: 'activate', phone: s.phone, email: s.email, name: s.name, transactionId: s.transactionId, lang }),
-      }).catch(() => {})
-      void saveAll()
-    } catch { setSmsNote(tr('smsConfirmDemo')) }
     setBusy(false)
   }
 
@@ -196,11 +173,11 @@ export default function PlannerClient({ lang, setLang }: { lang: Lang; setLang: 
       return { ...prev, q: { ...prev.q, [k]: arr.includes(item) ? arr.filter((x) => x !== item) : [...arr, item] } }
     })
 
-  const steps = [tr('stepInfo'), tr('stepPayment'), tr('stepBudget'), tr('stepQuestionnaire'), tr('stepPdf')]
+  const steps = [tr('stepInfo'), tr('stepBudget'), tr('stepQuestionnaire'), tr('stepPdf')]
 
   const canGo = (i: number) => {
-    if (i <= 1) return true
-    return activated
+    if (i <= 0) return true
+    return s.phoneVerified
   }
 
   /* ══════════════════════════ render ══════════════════════════ */
@@ -316,38 +293,8 @@ export default function PlannerClient({ lang, setLang }: { lang: Lang; setLang: 
           </>
         )}
 
-        {/* ════ STEP 2 — payment ════ */}
+        {/* ════ STEP 2 — budget ════ */}
         {step === 1 && (
-          <>
-            <Card title={tr('payTitle')} desc={tr('payDesc')}>
-              <div className="flex flex-wrap items-center gap-4 mb-6">
-                <a href="https://www.paypal.me/marielabarbettio/5" target="_blank" rel="noreferrer"
-                  className="inline-block rounded-full px-8 py-3.5 font-semibold text-white shadow-lg transition hover:brightness-105 active:scale-[0.98]"
-                  style={{ background: 'linear-gradient(135deg, #0070BA, #00457C)' }}>
-                  {tr('payBtn')}
-                </a>
-                <p className="text-[13px]" style={{ color: PINK.deep }}>{tr('paypalAccount')}</p>
-              </div>
-              <Field label={tr('txnLabel')}>
-                <input className={inputCls} style={inputStyle} value={s.transactionId}
-                  placeholder={tr('txnPh')} onChange={(e) => set('transactionId', e.target.value)} />
-              </Field>
-              <div className="mt-6 flex flex-wrap items-center gap-4">
-                <PrimaryBtn onClick={activate} disabled={busy || activated}>{activated ? tr('activated') : tr('activateBtn')}</PrimaryBtn>
-                {smsNote && <p className="text-[13px]" style={{ color: PINK.deep }}>{smsNote}</p>}
-              </div>
-            </Card>
-            <div className="flex justify-between">
-              <button onClick={() => setStep(0)} className="rounded-full px-6 py-3 text-[14px]" style={{ color: PINK.deep }}>←</button>
-              <PrimaryBtn onClick={() => { if (!activated) { setMsg(tr('txnRequired')); return } setMsg(''); setStep(2) }} disabled={!activated}>
-                {tr('continueBtn')} →
-              </PrimaryBtn>
-            </div>
-          </>
-        )}
-
-        {/* ════ STEP 3 — budget ════ */}
-        {step === 2 && (
           <>
             {/* overview */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
@@ -440,14 +387,14 @@ export default function PlannerClient({ lang, setLang }: { lang: Lang; setLang: 
             </Card>
 
             <div className="flex justify-between">
-              <button onClick={() => setStep(1)} className="rounded-full px-6 py-3 text-[14px]" style={{ color: PINK.deep }}>←</button>
-              <PrimaryBtn onClick={() => { void saveAll(); setStep(3) }}>{tr('continueBtn')} →</PrimaryBtn>
+              <button onClick={() => setStep(0)} className="rounded-full px-6 py-3 text-[14px]" style={{ color: PINK.deep }}>←</button>
+              <PrimaryBtn onClick={() => { void saveAll(); setStep(2) }}>{tr('continueBtn')} →</PrimaryBtn>
             </div>
           </>
         )}
 
-        {/* ════ STEP 4 — questionnaire ════ */}
-        {step === 3 && (
+        {/* ════ STEP 3 — questionnaire ════ */}
+        {step === 2 && (
           <>
             <Card title={tr('qTitle')} desc={`${tr('qOwner')}: ${s.name}`}>
               <div className="grid md:grid-cols-2 gap-5">
@@ -566,14 +513,14 @@ export default function PlannerClient({ lang, setLang }: { lang: Lang; setLang: 
             </Card>
 
             <div className="flex justify-between">
-              <button onClick={() => setStep(2)} className="rounded-full px-6 py-3 text-[14px]" style={{ color: PINK.deep }}>←</button>
-              <PrimaryBtn onClick={() => { void saveAll(); setStep(4) }}>{tr('continueBtn')} →</PrimaryBtn>
+              <button onClick={() => setStep(1)} className="rounded-full px-6 py-3 text-[14px]" style={{ color: PINK.deep }}>←</button>
+              <PrimaryBtn onClick={() => { void saveAll(); setStep(3) }}>{tr('continueBtn')} →</PrimaryBtn>
             </div>
           </>
         )}
 
-        {/* ════ STEP 5 — PDF ════ */}
-        {step === 4 && (
+        {/* ════ STEP 4 — PDF ════ */}
+        {step === 3 && (
           <>
             <Card title={tr('pdfTitle')} desc={tr('pdfDesc')}>
               <div className="flex flex-wrap items-center gap-5">
@@ -584,7 +531,7 @@ export default function PlannerClient({ lang, setLang }: { lang: Lang; setLang: 
               </div>
             </Card>
             <div className="flex justify-start">
-              <button onClick={() => setStep(3)} className="rounded-full px-6 py-3 text-[14px]" style={{ color: PINK.deep }}>←</button>
+              <button onClick={() => setStep(2)} className="rounded-full px-6 py-3 text-[14px]" style={{ color: PINK.deep }}>←</button>
             </div>
           </>
         )}

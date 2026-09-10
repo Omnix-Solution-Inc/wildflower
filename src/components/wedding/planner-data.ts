@@ -125,7 +125,6 @@ export const T: Dict = {
 
   step: { en: 'Step', es: 'Paso' },
   stepInfo: { en: 'Your Information', es: 'Tus Datos' },
-  stepPayment: { en: 'Payment & Activation', es: 'Pago y Activación' },
   stepBudget: { en: 'Budget Manager', es: 'Gestor de Presupuesto' },
   stepQuestionnaire: { en: 'Master Questionnaire', es: 'Cuestionario Maestro' },
   stepPdf: { en: 'Your Custom PDF', es: 'Tu PDF Personalizado' },
@@ -148,18 +147,7 @@ export const T: Dict = {
   continueBtn: { en: 'Continue', es: 'Continuar' },
   completeAll: { en: 'Please complete name, phone and email first.', es: 'Por favor completa nombre, teléfono y correo primero.' },
 
-  payTitle: { en: 'One-time activation — $5.00 USD', es: 'Activación única — $5.00 USD' },
-  payDesc: { en: 'Your one-time payment unlocks your personalized planner and PDF guide forever.', es: 'Tu pago único desbloquea tu planificador personalizado y tu guía en PDF para siempre.' },
-  payBtn: { en: 'Pay $5.00 with PayPal', es: 'Pagar $5.00 con PayPal' },
-  paypalAccount: { en: 'PayPal account: marielabarbettio@gmail.com', es: 'Cuenta PayPal: marielabarbettio@gmail.com' },
-  txnLabel: { en: 'PayPal Transaction ID / Receipt Reference', es: 'ID de Transacción PayPal / Referencia de Recibo' },
-  txnPh: { en: 'e.g. 9XY12345AB678901C', es: 'ej. 9XY12345AB678901C' },
-  activateBtn: { en: 'Activate My Planner', es: 'Activar Mi Planificador' },
-  txnRequired: { en: 'Enter your PayPal transaction ID to activate.', es: 'Ingresa tu ID de transacción PayPal para activar.' },
   verifyFirst: { en: 'Please verify your phone number to continue.', es: 'Verifica tu número de teléfono para continuar.' },
-  smsConfirmSent: { en: 'Confirmation SMS sent to your phone ✓', es: 'SMS de confirmación enviado a tu teléfono ✓' },
-  smsConfirmDemo: { en: 'SMS gateway in setup — confirmation will be sent once connected.', es: 'Pasarela SMS en configuración — la confirmación se enviará al conectarla.' },
-  activated: { en: 'Planner activated ✓', es: 'Planificador activado ✓' },
 
   budgetTitle: { en: 'Financial & Budget Management', es: 'Gestión Financiera y Presupuesto' },
   targetBudget: { en: 'Total Target Budget', es: 'Presupuesto Objetivo Total' },
