@@ -32,7 +32,6 @@ export function Navbar() {
         <div className="hidden md:flex gap-9 items-center">
           <a href="#shop" className={linkCls}><Bi en="Shop" es="Tienda" /></a>
           <a href="#services" className={linkCls}><Bi en="Our Work" es="Nuestro Trabajo" /></a>
-          <a href="/event-planner" className={linkCls}><Bi en="Event Planner" es="Planificación de Evento" /></a>
           <a href="#contact" className={linkCls}><Bi en="Book Now" es="Reservar" /></a>
 
           {/* Language toggle */}
@@ -64,7 +63,6 @@ export function Navbar() {
         <div className="fixed inset-0 bg-sand z-[999] flex flex-col items-center justify-center gap-8 md:hidden">
           <a href="#shop" onClick={() => setMenuOpen(false)} className="text-sm tracking-[0.2em] uppercase text-moss font-medium"><Bi en="Shop" es="Tienda" /></a>
           <a href="#services" onClick={() => setMenuOpen(false)} className="text-sm tracking-[0.2em] uppercase text-moss font-medium"><Bi en="Our Work" es="Nuestro Trabajo" /></a>
-          <a href="/event-planner" onClick={() => setMenuOpen(false)} className="text-sm tracking-[0.2em] uppercase text-moss font-medium"><Bi en="Event Planner" es="Planificación de Evento" /></a>
           <a href="#contact" onClick={() => setMenuOpen(false)} className="text-sm tracking-[0.2em] uppercase text-moss font-medium"><Bi en="Book Now" es="Reservar" /></a>
           <div className="flex gap-2 mt-2">
             <button onClick={() => setLang('en')} className={`px-4 py-2 text-xs tracking-[0.16em] uppercase font-semibold rounded-full ${lang === 'en' ? 'bg-moss text-sand' : 'border border-moss/30 text-moss'}`}>EN</button>
