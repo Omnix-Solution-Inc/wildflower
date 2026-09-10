@@ -23,15 +23,8 @@ export function Navbar() {
       <nav className={`fixed top-0 left-0 w-full z-[1000] flex items-center justify-between transition-all duration-300 ${
         scrolled ? 'py-3 px-[6%] bg-sand/95 backdrop-blur-md shadow-sm' : 'py-5 px-[6%] bg-transparent'
       }`} style={{ borderBottom: scrolled ? '1px solid rgba(61,74,62,0.1)' : 'none' }}>
-        <a href="#" className="flex items-center gap-3">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={scrolled ? '/flor-moss.png' : '/flor-cream.png'}
-            alt="The Bella Wildflower"
-            className="h-9 w-auto transition"
-            style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.15))' }}
-          />
-          <span className={`hidden sm:inline font-cinzel text-base tracking-[0.15em] transition ${scrolled ? 'text-moss' : 'text-white'}`}>
+        <a href="#" className="flex items-center gap-2">
+          <span className={`font-cinzel text-base tracking-[0.15em] transition ${scrolled ? 'text-moss' : 'text-white'}`}>
             THE BELLA WILDFLOWER
           </span>
         </a>
