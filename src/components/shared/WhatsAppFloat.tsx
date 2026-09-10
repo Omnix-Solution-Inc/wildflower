@@ -7,7 +7,7 @@ export function WhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="WhatsApp +1 (321) 732-9993"
-      className="fixed top-20 right-4 z-[998] flex h-13 w-13 items-center justify-center rounded-full shadow-lg hover:scale-110 transition-transform md:h-14 md:w-14"
+      className="fixed bottom-5 right-5 z-[998] flex h-13 w-13 items-center justify-center rounded-full shadow-lg hover:scale-110 transition-transform md:h-14 md:w-14"
       style={{ backgroundColor: '#25D366' }}
     >
       <svg viewBox="0 0 24 24" className="h-7 w-7 md:h-8 md:w-8" fill="#ffffff" aria-hidden="true">
